@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>任务中心</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/inf.css">
+    <style type="text/css">
+    body{
+        background-color: #f3f3f3;
+    }
+    </style>
+
+    <script type="text/javascript">
+    (function() {
+        var newRem = function() {
+        var html = document.documentElement;
+        html.style.fontSize = html.getBoundingClientRect().width / 10 + 'px';
+        };
+        window.addEventListener('resize', newRem, false);
+        newRem();
+    })();
+    </script>
+</head>
+<body>
+    <div class="header">
+        <img src="../image/arrowleft.jpg">
+        <span>任务中心</span>
+    </div>
+
+    <div class="avai">
+        <div class="avai1txt">首次充值<span style="color: gray;font-size: 0.3rem;">(新用户首次充值赠送100BIPA币)</span></div>
+        <div class="avai1img"><div class="ex1">领取</div></div>
+    </div>
+    <hr class="hrbiu">
+      <div class="avai">
+        <div class="avai1txt">邀请好友<span style="color: gray;font-size: 0.3rem;">(成功邀请5个好友并注册)</span></div>
+        <div class="avai1img"><div class="ex1">领取</div></div>
+    </div>
+    <hr class="hrbiu">
+
+</body>
+</html>

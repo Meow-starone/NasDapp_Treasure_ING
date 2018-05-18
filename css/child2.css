@@ -1,0 +1,144 @@
+/*1_6*/
+body{
+	/*background-color: white;*/
+}
+.hrbase{border-top:0.0138889rem solid #d1d1d1;font-size:0px;
+		border-right:0px; border-bottom:0px; border-left:0px;}
+.sessionbanner{
+	width: 100%;
+	height: 1.222rem;
+	/*background-color: #bb61ff;*/
+	text-align: center;
+	line-height: 1.222rem;
+	/*color: white;*/
+	font-size: 0.416667rem;
+	font-weight: 700;
+	/*margin-bottom: 0.1rem;*/
+	overflow: hidden;
+}
+.sessionbanner img{
+	width: 0.58333rem;
+	height: 1.25rem;
+	float: left;
+}
+.firstimg{
+	width: 9.166667rem;
+	height: 9.166667rem;
+	margin:0 auto;
+	margin-top: 0.5rem;
+
+}
+.firstimg img{
+	width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.firsttxt{
+	/*width: 9.166667rem;*/
+	width: 10rem;
+	height: 2.05556rem;
+	line-height: 2.05556rem;
+	font-size: 0.38667rem;
+	line-height: 2.05556rem;
+	font-weight: bold;
+}
+.firsttxt div{
+	float: left;
+}
+.txt2{
+	height: 2.05556rem;
+	width: 5.3rem;
+	/*margin-left: 0.4rem;*/
+}
+.txt1{
+	/*padding-left: 0.5rem;*/
+	height: 2.05556rem;
+	width: 4rem;
+	margin-left: 0.6rem;
+}
+.txt2 img{
+	width: 1.30556rem;
+	height: 2.05556rem;
+}
+.txt2 img,.txt2txt{
+	float: left;
+}
+.txt2txt{
+	margin-left: 0.1rem;
+}
+.lanner{
+	width: 100%;
+	height:3.472rem;
+	background-color: #38a9ff; 
+}
+.lannerl{
+	width: 4.583rem;
+	height: 3.472rem;
+	float: left;
+	background-color: pink;
+	margin-left: 0.41667rem;
+	/*text-align: center;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.lannerl img{
+	width: 2rem;
+	/*margin:1rem auto;*/
+}
+.lannerr{
+	/*font-size: 0.3334rem;*/
+	float: left;
+	color: white;
+	line-height: 0.8rem;
+}
+.extra{
+	margin-left: 0.4rem;
+	margin-top: 0.6rem
+}
+.description{
+	width: 100%;
+	height: 4.6111rem;
+	/*background-color: gray;*/
+}
+.desti{
+	font-weight: bold;
+	font-size: 0.41667rem;
+	margin-left: 0.2778rem;
+	letter-spacing: 0.15rem;
+	/*margin-top: 0.3rem;*/
+	height: 1.5rem;
+	line-height: 1.5rem;
+}
+.dests{
+	width: 95%;	
+	margin-left: 0.5rem;
+}
+
+
+.firsttxt{
+	/*width: 9.166667rem;*/
+	width: 10rem;
+	height: 1.94rem;
+	line-height: 1.94rem;
+	font-size: 0.38667rem;
+	line-height: 1.94rem;
+	font-weight: bold;
+}
+.nowtxt{
+	height: 1.94rem;
+	width: 4rem;
+	float: left;
+}
+.nowtxt img{
+	width: 1.30556rem;
+	height: 1.94rem;
+}
+.nowtxt img,.txts{
+	float: left;
+}
+.txts{
+	margin-left: 0.1rem;
+	line-height: 1.94rem;
+}

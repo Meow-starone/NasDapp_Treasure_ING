@@ -1,0 +1,214 @@
+/*1_2\1_3、1——4/1——5页面*/
+
+
+body{
+	background-color: #f4f4f4;
+
+}
+.orderbanner{
+	width: 100%;
+	height: 1.222rem;
+	background-color: #bb61ff;
+	text-align: center;
+	line-height: 1.222rem;
+	color: white;
+	font-size: 0.416667rem;
+	font-weight: 700;
+	/*margin-bottom: 0.1rem;*/
+}
+.orderbanner img{
+	width: 0.7361111rem;
+	height: 1.19444rem;
+	float: left;
+}
+.orderbanner span{
+	margin-right: 0.7361111rem;
+}
+.charcon{
+	width: 97%;
+    /*height: 18.91667rem;*/
+    /*height: 15rem;*/
+    display: flex;
+    flex-wrap: wrap;
+    /*border: 1px solid green;*/
+    justify-content:space-around;
+    margin: 0 auto; 
+    margin-top: 0.3rem;
+    /*text-align: center;*/
+    /*background-color: pink;*/
+
+}
+.charbox{
+    /*flex: 1;*/
+    /*background-color: pink;*/
+    width: 4.58333rem;
+    height: 4.58333rem;
+    border-radius: 0.2rem;
+    text-align: center;
+    margin-bottom: 0.3rem;
+    background-color: white;
+    border:1px solid #e2e2e2;
+    color: white;
+}
+.charbox img{
+    width: 1.3333rem;
+    height: 1.3333rem;
+    margin-top: 0.9rem;
+}
+.chartxt{
+    font-size: 0.45rem;
+    /*font-weight: 530;*/
+    margin-top: 0.4rem;
+	
+}
+
+.limitbanner{
+	width: 100%;
+	height: 3.83333rem;
+	/*background-color: pink;*/
+	background-image: url(../image/Buylimit1.png);
+	background-size: 100% 3.83333rem;
+	background-repeat: no-repeat;
+}
+.limitbox{
+    /*flex: 1;*/
+    /*background-color: pink;*/
+    width: 4.58333rem;
+    height: 4.8333rem;
+    border-radius: 0.2rem;
+    text-align: center;
+    margin-bottom: 0.3rem;
+    background-color: white;
+    border:1px solid #e2e2e2;
+}
+.limit1{
+/*	width: 4.13333rem;
+	height: 1.8rem;*/
+	/*clear: both;*/
+	margin-left: 0.15rem;
+    margin-top: 0.15rem;
+    /*overflow: hidden;为什么不生效*/
+    margin-bottom: 2.1rem;
+}
+.limit1 img{
+	width: 1.6667rem;
+    height: 1.6667rem;
+    float: left;
+}
+.limit1txt{
+	float: left;
+	text-align: left;
+	margin-left: 0.1rem;
+	/*font-size:0.25rem;*/
+	/*white-space: nowrap;*/
+
+}
+.limit1txt span:nth-child(1){
+	font-size: 0.33rem;
+	letter-spacing: 0.06rem;
+}
+.limit2{
+	/*clear: both;*/
+	text-align: left;
+	margin-left: 0.15rem;
+	margin-top: 0.15rem;
+}
+.limit2_3 img{
+	height: 0.5rem;
+	width: 0.55556rem;
+}
+.limit2_3 li{
+	float: left;
+}
+.limit3{
+	height: 0.97777rem;
+	width: 4.16667rem;
+	border-radius: 0.1rem;
+	background-color: #7c7c7c;
+	margin-top: 0.62rem;
+	margin-left: 0.19rem;
+	/*vertical-align: middle;*/
+	line-height: 0.97777rem;
+	color: white;
+	letter-spacing: 0.06rem;
+	font-size: 0.35rem;
+}
+.limit4{
+	height: 0.97777rem;
+	width: 4.16667rem;
+	border-radius: 0.1rem;
+	background-color: #bb61ff;
+	margin-top: 0.62rem;
+	margin-left: 0.19rem;
+	/*vertical-align: middle;*/
+	line-height: 0.97777rem;
+	color: white;
+	letter-spacing: 0.06rem;
+	font-size: 0.35rem;
+}
+.quesline{
+	width: 100%;
+	height: 1.6667rem;
+	/*background-color: pink;*/
+}
+.questxt{
+	float: left;
+	margin-left: 0.4rem;
+	line-height: 1.6667rem;
+	font-size: 0.3334rem;
+}
+.quesimg img{
+	width: 0.916667rem;
+	height: 1.6667rem;
+	float: right;
+}
+.hrbiu{width: 9.3rem;border-top:0.0138889rem solid #f1dfff;font-size:0px;
+		border-right:0px; border-bottom:0px; border-left:0px;}
+
+
+
+.gamecontext{
+	width: 9.2rem;
+	height: 15rem;
+	background-color: #ffffff;
+	border: 0.0138889rem solid #cecece;
+	margin: 0 auto;
+	margin-top: 0.6rem;
+}
+.gamecontext p{
+	text-indent:2em;
+}
+.gamecontext div:nth-child(1){
+	margin-top: 0.83333rem;
+	font-size: 0.416667rem;
+	text-align: center;
+}
+.gamecontext div:nth-child(2){
+	margin-top: 1.2rem;
+	/*text-align: center;*/line-height: 0.6rem;
+	padding: 0.32rem;
+}
+.gamecontext div:nth-child(3){
+	margin-top: 1.5rem;
+	font-weight: bold;
+	text-align: right;
+	margin-right: 0.32rem;
+}
+
+.sessionbanner{
+	width: 100%;
+	height: 1.222rem;
+	/*background-color: #bb61ff;*/
+	text-align: center;
+	line-height: 1.222rem;
+	/*color: white;*/
+	font-size: 0.416667rem;
+	font-weight: 700;
+	/*margin-bottom: 0.1rem;*/
+	overflow: hidden;
+}
+.sessionbanner img{
+	width: 0.58333rem;
+	height: 1.25rem;
+	float: left;
+}

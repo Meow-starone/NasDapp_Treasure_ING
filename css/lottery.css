@@ -1,0 +1,115 @@
+/*
+block inline 元素都无效
+vertical-align: middle;
+  display: table-cell;
+  为何只有这种方式有效啊aaaaa
+   且会被flex属性破坏*/
+  /*这样都无效*/
+	/*line-height: 2rem;*/
+/*	display: flex;
+  justify-content: center;
+*/
+/*margin*/
+/*目前解决方案是用background-position*/
+
+.bannerbiu{
+	/*background-color: pink;*/
+	width: 100%;
+	height:2.7778rem;
+}
+.bannerbiu img{
+	width: 100%;
+	height:2.7778rem;
+}
+/*切换拦*/
+.exchange{
+	height: 1.25rem;
+	width: 100%;
+	background-color: pink;
+	font-size: 0.4rem;
+/*	background-image: url(../image/emm_04.jpg);
+	background-repeat: no-repeat;
+	background-size: 3.47222rem 1.13889rem;*/
+}
+.over{
+	width: 4.513889rem;
+	height: 1.25rem;
+	float: left;
+	text-align: center;
+	line-height: 1.25rem;
+	margin-left: 0.27778rem;
+}
+.willopen{
+	width: 4.513889rem;
+	height: 1.25rem;
+	float: left;
+	text-align: center;
+	line-height: 1.25rem;
+	margin-left: 0.46667rem;
+}
+.linegray{
+	width: 100%;
+	height: 0.138889rem;
+	background-color: #e6e6e6;
+}
+/*开奖模块*/
+.openlo{
+    width: 100%;
+    height: 18.91667rem;
+    /*height: 15rem;*/
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid green;
+    justify-content:space-around;
+    margin-top: 0.4rem;
+}
+.openbox{
+    /*flex: 1;*/
+    /*background-color: pink;*/
+    width: 4.5rem;
+    height: 6.20556rem;
+}
+.openbox img{
+    width: 4.48611rem;
+    height: 4.48611rem;
+}
+.openshop{
+    width: 4.48611rem;
+    height: 1.30556rem;
+    font-size: 0.1rem;
+    /*background-color: yellow;*/
+}
+
+
+/*iframe*/
+.miao{
+	width: 10rem;
+	height: 18.916667rem;
+}
+
+
+
+
+
+
+.ceshi{
+	width: 5rem;
+	height: 5rem;
+	background-color: pink;
+	/*text-align: center;*/
+/*	background-image: url(../image/pict.png);
+	background-size: 2rem;
+	background-repeat: no-repeat;
+	background-position: 50%;*/
+
+/*vertical-align: middle;
+  display: table-cell;*/
+}
+.ceshi img{
+	width: 2rem;
+	height: 2rem;
+	margin: 0 auto;
+	/*display: inline-block;*/
+	/*text-align: center;*/
+	/*vertical-align:middle;*/
+}

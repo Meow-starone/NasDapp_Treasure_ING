@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>中奖啦！</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/lottery.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript">
+    (function() {
+        var newRem = function() {
+        var html = document.documentElement;
+        html.style.fontSize = html.getBoundingClientRect().width / 10 + 'px';
+        };
+        window.addEventListener('resize', newRem, false);
+        newRem();
+    })();
+    </script>
+    
+</head>
+<body>
+	<div class="bannerbiu"><img src="image/emm_01.jpg"></div>
+    <div class="exchange">
+        <div id="miao1" class="over">已开奖</div>
+        <div id="miao2" class="willopen">即将开奖</div>
+    </div>
+    <div class="linegray"></div>
+    <iframe  class="miao" src="lottery_iframe.html" scrolling="no" frameborder="0"></iframe>
+    <!-- <iframe src=""></iframe> -->
+
+   <!--  <div class="openlo">
+        <div class="openbox">
+            <div><img src="image/loft.png"></div>
+            <div class="buyshop">
+                    <span>价格：1 lote</span><br>
+                    <span>奖品：1000 lote</span><br>
+                    <span>中奖者：253****6</span>
+            </div>
+        </div>
+        <div class="openbox">
+            <div><img src="image/loft.png"></div>
+            <div class="opentxt">
+                    <span>价格：1 lote</span><br>
+                    <span>奖品：1000 lote</span><br>
+                    <span>中奖者：253****6</span>
+            </div>
+        </div>
+        <div class="openbox">
+            <div><img src="image/loft.png"></div>
+            <div class="opentxt">
+                    <span>价格：1 lote</span><br>
+                    <span>奖品：1000 lote</span><br>
+                    <span>中奖者：253****6</span>
+            </div>
+        </div>
+        <div class="openbox">
+            <div><img src="image/loft.png"></div>
+            <div class="opentxt">
+                    <span>价格：1 lote</span><br>
+                    <span>奖品：1000 lote</span><br>
+                    <span>中奖者：253****6</span>
+            </div>
+        </div>
+        <div class="openbox">
+            <div><img src="image/loft.png"></div>
+            <div class="opentxt">
+                    <span>价格：1 lote</span><br>
+                    <span>奖品：1000 lote</span><br>
+                    <span>中奖者：253****6</span>
+            </div>
+        </div>
+        <div class="openbox">
+            <div><img src="image/loft.png"></div>
+            <div class="opentxt">
+                    <span>价格：1 lote</span><br>
+                    <span>奖品：1000 lote</span><br>
+                    <span>中奖者：253****6</span>
+            </div>
+        </div>  
+    
+    </div> -->
+
+
+<!--         <div style="width: 100%;height: 1.2222rem;">
+        <div class="footer">
+        <ul class="footerul">
+            <li class="footer1"><img src="image/footer1.png"></li>
+            <li class="footer2"><img src="image/footer2.png"></li>
+            <li class="footer3"><img src="image/footer3.png"></li>
+            <li class="footer4"><img src="image/footer4.png"></li>
+        </ul>
+
+        <ul class="footertxt">
+            <li class="footer1txt">主页</li>
+            <li class="footer2txt">开奖</li>
+            <li class="footer3txt">订单</li>
+            <li class="footer4txt">我的</li>
+        </ul>
+        
+        </div> -->
+
+<script type="text/javascript"> 
+$(function () { 
+    $("#miao2").click(function () { 
+        $("iframe").attr("src", "lottery_iframe2.html"); 
+    }); 
+
+    $("#miao1").click(function () { 
+        $("iframe").attr("src", "lottery_iframe.html"); 
+    }); 
+}); 
+</script>
+</body>
+</html>

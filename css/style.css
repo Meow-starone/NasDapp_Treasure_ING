@@ -1,0 +1,324 @@
+/*轮播样式*/
+    .container {
+        position: relative;
+        width: 10rem;
+        height: 4.861111rem;
+        /*margin: auto 0 auto;*/
+        /*box-shadow: 0 0 5px green;*/
+        overflow: hidden;
+    }
+    .container .wrap {
+        position: absolute;
+        width: 70rem;
+        height: 4.861111rem;
+        z-index: 1;
+    }
+    .container .wrap img {
+        float: left;
+        width: 10rem;
+        height: 4.861111rem;
+    }
+    .container .buttons {
+        position: absolute;
+        right: 5px;
+        bottom:40px;
+        width: 150px;
+        height: 10px;
+        z-index: 2;
+    }
+    .container .buttons span {
+        margin-left: 5px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: green;
+        text-align: center;
+        color:white;
+        cursor: pointer;
+    }
+    .container .buttons span.on{
+        background-color: red;
+    }
+    .container .arrow {
+        position: absolute;
+        top: 35%;
+        color: green;
+        padding:0px 14px;
+        border-radius: 50%;
+        font-size: 50px;
+        z-index: 2;
+        display: none;
+    }
+    .container .arrow_left {
+        left: 10px;
+    }
+    .container .arrow_right {
+        right: 10px;
+    }
+    .container:hover .arrow {
+        display: block;
+    }
+    .container .arrow:hover {
+        background-color: rgba(0,0,0,0.2);
+    }
+/*导航栏CSS*/
+    .nav{
+        width: 100%;
+        height:2.3rem;
+        /*background-color: yellow;*/
+    }
+    .nav li{
+        float: left;
+        width: 3.333333rem;
+        height: 1.6rem;
+        text-align: center;
+
+    }
+    .nav img{
+        width: 1rem;
+        height: 1rem;
+        margin-top: 0.4rem;
+    }
+    .navtex li{
+        height: 0.5rem;
+        margin-top: -0.07rem;
+        font-size: 0.2rem;
+    }
+/*消息栏样式*/
+    .newports{
+        width: 100%;
+        height: 0.83333rem;
+        text-align: center;
+        position: relative;
+        background-color: #f6f6f6;
+    }
+    .newports li{
+        float: left;
+    }
+    .portsli1{
+        width: 0.5277778rem;
+        height: 0.4027778rem;
+        margin-left: 0.5rem;
+        margin-right:0.5rem;
+        margin-top: 0.3rem;
+    }
+    .portsli2{
+        width: 7.75rem;
+        height: 0.72222rem;
+        margin-left: -0.2rem;
+        margin-top:0.1rem;
+    }
+    .portsli3{
+        /*width: 7.44rem;
+        height: 0.69333rem;*/
+        margin-top:-0.68rem;
+        margin-left: 2.2rem;
+        color: white;
+        font-size: 0.2rem;
+        /*font-size: 0.34rem;*/
+        /*z-index: 998;*/
+        /*background-image: url(image/notice_l.png);*/
+        /*background-size: 7.44rem 0.69333rem;*/
+    }
+/*结果拦样式*/
+    .result{
+        margin-top: 0.1rem
+        width: 100%;
+        height: 6.4rem;
+        /*background-color: pink;*/
+        margin-top: 0.1333rem;
+    }
+    .resultnav{
+        height: 0.73666rem;
+    }
+    .imageresult{
+        width: 3.5444rem;
+        margin-right: 0.3rem;
+        margin-left: 0.1rem;
+    }
+    .viewfun{
+        /*float: left;*/
+        margin-top: 0.1333rem;
+        flex: 1;
+        /*text-align: center;*/
+        /*line-height: 100px;*/
+        font-size:0.2rem;
+        /*font-size: 0.3rem;*/
+    }
+    .viewfun span{margin-left: 0.2rem;}
+
+.linehr{
+    width:9.4667rem;
+    height:0.138889rem; 
+    background:rgba(241,241,241,1);
+    margin-left: 0.138889rem;
+}
+.rescon{
+    display:flex;
+    overflow: hidden; 
+}
+
+/*全部商品*/
+.allshops{
+    width:100%;
+    height:0.6666667rem;
+    /*background-color: pink;*/
+    margin-bottom: 0.15rem;
+}
+.allshops .shops1 img{
+    height: 0.73667rem;
+    width: 2.73667rem;
+}
+.shops1{
+    float: left;
+}
+.shops2{
+    float: left;
+    /*background-color: yellow;*/
+    height:0.73888667rem;
+    width: 5.5rem;
+}
+.shops2 li{
+    float: left;
+    width: 1.1rem;
+    height: 0.66667rem;
+    /*vertical-align: middle;*/
+    text-align: center;
+    /*display:table-cell;*/
+    line-height: 0.6667rem;
+}
+.shops2 img{
+    width: 0.66667rem;
+    height: 0.66667rem;
+    /*margin: auto;*/
+    /*display: block;*/
+    /*vertical-align: middle;*/
+    /*position: relative;*/
+    /*top: 50%;*/
+    
+}
+
+.shops3{
+    float: left;
+    /*background-color: green;*/
+    height:0.73888667rem;
+    line-height: 0.66667rem;
+    margin-left: 0.45rem;
+    font-size: 0.2rem;
+    /*margin-bottom: 0.5rem;*/
+}
+.shopstxt{
+    position: absolute;
+    color: white;
+    left: 0.23rem;
+    margin-top: 0.1rem;
+}
+/*全部商品盒子*/
+.show{
+    width: 100%;
+    /*height: 15rem;*/
+    display: flex;
+    flex-wrap: wrap;
+    /*border: 1px solid green;*/
+    justify-content:space-around;
+}
+.showbox{
+    /*flex: 1;*/
+    /*background-color: pink;*/
+    width: 4.5rem;
+    height: 6.30556rem;
+}
+.showbox img{
+    width: 4.48611rem;
+    height: 4.48611rem;
+}
+.buyshop{
+    width: 4.48611rem;
+    height: 1.30556rem;
+    /*background-color: yellow;*/
+}
+.buytxt{
+    width:2.63889rem;
+    height: 0.972222rem;
+    /*background-color: green;*/
+    float: left;
+}
+.buyimg{
+    width:1.8195rem;
+    height: 0.695rem;
+    /*background-color: red;*/
+    float: left;
+    margin-top: 0.1rem;
+    /*background-image: url(image/miao_07.jpg);*/
+}
+.buyimg img{
+    width:1.8195rem;
+    height: 0.695rem;
+}
+.miao11{
+    width: 10rem;
+    height: 16.516667rem;
+}
+
+/*固定底栏*/
+.footer{
+    width:100%;
+    height: 1.2222rem;
+    position: fixed;
+    bottom: 0rem;
+    /*background-color: pink;*/
+    z-index: 99;
+    background-color: #f6f6f6;
+    /*margin-top: 0.1rem;*/
+}
+
+.footer div{
+    float: left;
+    width: 2.5rem;
+    height: 1.2222rem;
+}
+.footer1{
+    background-image: url(../image/footer1.jpg);
+    background-size: 2.5rem 1.2222rem;
+    background-repeat: no-repeat;
+}
+.footer2{
+    background-image: url(../image/footer2.jpg);
+    background-size: 2.5rem 1.2222rem;
+    background-repeat: no-repeat;
+}
+.footer3{
+    background-image: url(../image/footer3.jpg);
+    background-size: 2.5rem 1.2222rem;
+    background-repeat: no-repeat;
+}
+.footer4{
+    background-image: url(../image/footer4.jpg);
+    background-size: 2.5rem 1.2222rem;
+    background-repeat: no-repeat;
+}
+
+
+.footer1a{
+    background-image: url(../image/footer1a.jpg);
+    background-size: 2.5rem 1.2222rem;
+    background-repeat: no-repeat;
+}
+.footer2a{
+    background-image: url(../image/footer2a.jpg);
+    background-size: 2.5rem 1.2222rem;
+    background-repeat: no-repeat;
+}
+.footer3a{
+    background-image: url(../image/footer3a.jpg);
+    background-size: 2.5rem 1.2222rem;
+    background-repeat: no-repeat;
+}
+.footer4a{
+    background-image: url(../image/footer4a.jpg);
+    background-size: 2.5rem 1.2222rem;
+    background-repeat: no-repeat;
+}
+
+/*开奖界面*/

@@ -1,0 +1,93 @@
+body{
+	background-color: #f4f4f4;
+}
+.banneruser{
+	width: 100%;
+	height:5.58333rem;
+	/*background-color: pink;*/
+	background-image: url(../image/user.jpg);
+	background-size: 100% 5.58333rem;
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	color:white;
+	font-size:0.4rem;
+}
+/*.ban1 img{
+	width: 2.2222rem;
+	height: 2.2222rem;
+}*/
+.ban1{
+	width: 3rem;
+	height: 3.111rem;
+	/*text-align: center;*/
+/*	display: table-cell;
+	vertical-align:middle;*/
+	background-image: url(../image/pict.png);
+	background-size: 2.2222rem;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+.banneruser button{
+	background:none;
+	color: white;
+	width: 2.8333rem;
+	height: 0.9444rem;
+	margin-top: 0.4rem;
+	border-radius: 0.15rem;
+	border: 0.02rem solid white;
+	/*transition-duration: 0.4s;*/
+    text-decoration: none;
+    overflow: hidden;
+    outline:none;
+}
+.banneruser button:active {
+	border: 0.05rem solid gray;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 
+	0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.banneruser>div{
+	margin-top: -0.3rem;
+}
+.banneruser div:nth-child(4){
+	margin-top: 0.3rem;
+}
+.linehr{
+	width: 100%;
+	height: 0.23611rem;
+	background-color: #e8e8e8;
+}
+.trline{
+	width: 100%;
+	height: 1.38889rem;
+}
+/*.trline div{
+	float: left;
+}*/
+.lineimg{
+	margin-left: 0.27778rem;
+	float: left;
+}
+.lineimg img{
+	height: 1.38889rem;
+}
+.linearrow img{
+	height: 1.38889rem;
+}
+.linetxt{
+	height: 1.38888rem;
+	width: 2.6rem;
+	text-align: center;
+	float: left;
+	line-height: 1.38888rem;
+}
+.linearrow{
+	margin-right: 0.27778rem;
+	float: right;
+}
+.linehr2{
+	width: 100%;
+	height: 0.18611rem;
+	background-color: #e8e8e8;
+}

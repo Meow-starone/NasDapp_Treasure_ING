@@ -1,0 +1,107 @@
+.header{
+	width: 100%;
+	height: 1.19444rem;
+	background-color: #bb61ff;
+	text-align: center;
+	line-height: 1.19444rem;
+	color: white;
+	font-size: 0.416667rem;
+}
+.header img{
+	width: 0.7361111rem;
+	height: 1.19444rem;
+	float: left;
+}
+.header span{
+	margin-right: 0.7361111rem;
+	letter-spacing: 0.12rem;
+}
+.hrbiu{width: 10rem;border-top:0.0138889rem solid #f1dfff;font-size:0px;
+		border-right:0px; border-bottom:0px; border-left:0px;}
+
+.m-form{
+	width: 100%;
+	height:8.47rem;
+	/*background-color: pink; */
+}
+.m-form input{
+	border:none;
+	outline: medium;
+	width: 90%;
+	height: 1.6667rem;
+	/*text-align: right;*/
+	margin-left: 0.6rem;
+}
+.losspassword{
+	text-align: right;
+	color: gray;
+	margin-right: 0.28rem;
+	margin-top: 0.2rem;
+}
+.m-form button{
+	width: 9.44rem;height: 1.458rem;
+	color: white;
+	/*border: 1px solid #ddd;*/
+	/*cursor: pointer;*/
+	background-color: #bb61ff;
+	margin-left: 0.28rem;
+	margin-top: 2.2rem;
+	border:none;
+	border-radius: 0.1rem;
+}
+.m-form button:active{
+	background-color: gray;
+}
+.signup{
+	text-align: center;
+	margin-top: 0.5rem;
+	margin-left: 0.2rem;
+}
+
+.ver{
+	float: left;
+	height: 1rem;
+	width: 2rem;
+	background-color: pink;
+}
+.ver button{
+	width: 2rem;height: 1rem;
+	color: white;
+	background-color: #bb61ff;
+	margin-left: 0rem;
+	margin-top: 0rem;
+	border:none;
+	border-radius: 0.1rem;
+}
+
+#email{
+	margin-left: 0rem;
+	width: 80%;
+}
+.m-email label{
+	margin-left: 0.4rem;
+	font-size: 0.4rem;
+}
+
+.m-email input::-webkit-input-placeholder { /* WebKit browsers */ 
+font-size:0.3rem;
+} 
+.m-email input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+font-size:0.3rem;
+} 
+.m-email input::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+font-size:0.3rem;
+} 
+.m-email input:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+font-size:0.3rem;
+}
+
+.getusername{
+
+	width: 90%;
+	height: 1.6667rem;
+	/*text-align: right;*/
+	margin-left: 0.6rem;
+	line-height: 1.667rem;
+	font-weight: bold;
+}
