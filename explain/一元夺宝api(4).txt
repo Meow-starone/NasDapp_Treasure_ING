@@ -1,0 +1,73 @@
+/**
+ * 注册
+ * /register
+ * body:object{userName: 用户名, password: 密码,address:钱包地址}
+ * return result:object
+ * POST
+ */
+ 
+ /**
+ * 登录
+ * /login
+ * body:object{filed: 用户名, password: 密码}
+ * return result:object
+ * POST
+ */
+ 
+ /**
+ * 修改密码
+ * /users/password
+ * body:object{password: 密码}
+ * return result:object
+ * PUT
+ */
+ 
+ /**
+ * 下注 需要前端调用链上方法,之后将返回的hash发给后端
+ * /users/bid
+ * body:object{hash:hash}
+ * return result:object
+ * POST
+ */
+ 
+ /**
+ * 创建夺宝
+ * /gm/newDollar
+ * body:object{totalCt:总份数,perValue:每份的价格}
+ * return result:object
+ * POST
+ */
+//暂时不用用户创建
+ 
+ /**
+ * 获取单个夺宝
+ * /dollars/:bidId(\d+)
+ * params:(bidId:bidId)
+ * return result:object
+ * GET
+ */
+ 
+ /**
+ * 筛选获取夺宝列表
+ * /dollars/filter/search
+ * params:(limit:限制几条,page:获取第几页)
+ * return result:object
+ * GET
+ */
+ 
+ /**
+ * 获取用户数据
+ * /users
+ * return result:object
+ * GET
+ */
+ 
+ returnData:{code:,msg:,data:}
+code=0 成功
+	 10001 系统错误
+	 10002 参数错误
+	 10099 未登录
+	 
+msg 成功:suc/错误:错误信息
+
+data 一般只有get方法返回

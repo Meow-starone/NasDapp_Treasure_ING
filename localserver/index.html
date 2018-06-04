@@ -8,7 +8,18 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/orderbanner.css">
-    <script src="js/style.js"></script>
+
+    <script type="text/javascript">
+    (function() {
+        var newRem = function() {
+        var html = document.documentElement;
+        html.style.fontSize = html.getBoundingClientRect().width / 10 + 'px';
+        };
+        window.addEventListener('resize', newRem, false);
+        newRem();
+    })();
+    </script>
+    
 </head>
 <body>
 
@@ -45,9 +56,9 @@
 
     <div class="nav">
         <ul class="navul">
-            <a href="html/child/1_2.html"><li><img src="image/nav_1.png"></li></a>
-            <a href="html/child/1_3.html"><li><img src="image/nav_2.png"></li></a>
-            <a href="html/child/1_4.html"><li><img src="image/nav_3.png"></li></a>
+            <a href="child/1_2.html"><li><img src="image/nav_1.png"></li></a>
+            <a href="child/1_3.html"><li><img src="image/nav_2.png"></li></a>
+            <a href="child/1_4.html"><li><img src="image/nav_3.png"></li></a>
         </ul>
         <ul class="navtex">
             <li>商品分类</li>
@@ -68,7 +79,7 @@
         <div class="rescon">
             <div class="rescon1">
             <div class="viewfun">
-               <a href="html/child/1_6.html"><li><img class="imageresult" src="image/loft.png"></li></a>
+               <a href="child/1_6.html"><li><img class="imageresult" src="image/loft.png"></li></a>
                <span>价格：1LOT/份</span><br>
                <span>状态：已开奖</span><br>
                <span>奖励：1000LOT</span> 
@@ -106,7 +117,7 @@
 
     <div class="show">
         <div class="showbox">
-            <a href="html/child/2_1.html"><div><img src="image/loft.png"></div></a>
+            <a href="child/2_1.html"><div><img src="image/loft.png"></div></a>
             <div class="buyshop">
                 <div class="buytxt">
                     <span>价格：100lote</span><br>
@@ -154,11 +165,15 @@
     <div style="width: 100%;display: flex;margin-bottom: 1.2222rem;">
     <div class="footer">
 
-            <a href="html/main/index.html"><div id="f1" onclick="changepic();" class="footer1a"></div></a>
-            <a href="html/main/lottery.html"><div id="f2" onclick="changepic2();" class="footer2"></div></a>
-            <a href="html/main/order.html"><div id="f3" onclick="changepic3();" class="footer3"></div></a>
-            <a href="html/main/user.html"><div id="f4" onclick="changepic4();" class="footer4"></div></a>     
+            <a href="index.html"><div id="f1" onclick="changepic();" class="footer1a"></div></a>
+            <a href="lottery.html"><div id="f2" onclick="changepic2();" class="footer2"></div></a>
+            <a href="order.html"><div id="f3" onclick="changepic3();" class="footer3"></div></a>
+            <a href="sign/5.html"><div id="f4" onclick="changepic4();" class="footer4"></div></a>     
     </div>
+
+
+
+
     <script type="text/javascript" src="js/canjs.js"></script>
 </body>
 </html>

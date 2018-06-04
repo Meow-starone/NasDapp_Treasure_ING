@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>转入地址</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/inf.css">
+    <style type="text/css">
+    body{
+        background-color: white;
+    }
+    </style>
+
+    <script type="text/javascript">
+    (function() {
+        var newRem = function() {
+        var html = document.documentElement;
+        html.style.fontSize = html.getBoundingClientRect().width / 10 + 'px';
+        };
+        window.addEventListener('resize', newRem, false);
+        newRem();
+    })();
+    </script>
+</head>
+<body>
+    <div class="header">
+        <a href="4_2.html"><img src="../image/arrowleft.jpg"></a>
+        <span>转入地址</span>
+    </div>
+    
+    <div class="setin">
+        <div>ETH</div>
+        <div>余额：100000</div>   
+    </div>
+    <img src="../image/4_2_1_02.jpg" style="width:100%;height: 6.08rem;">
+    <div style="text-align: center;">0x5w8f4w5fw51fgd24g5e15gf4f1t</div>
+    <div class="setinbutton">
+        <button name="loginBtn" onclick="copy();">复 制</button>
+    </div>
+
+    <script type="text/javascript">
+        function copy(){
+            alert("复制成功")
+        }
+    </script>
+
+
+    
+</body>
+</html>

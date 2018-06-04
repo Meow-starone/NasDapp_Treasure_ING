@@ -104,7 +104,7 @@
 .ex1{
 	margin-top: -0.45rem;
 }
-.hrbiu{width: 10rem;border-top:0.0138889rem solid #f1dfff;font-size:0px;
+.hrbiu{border-top:0.0138889rem solid #f1dfff;font-size:0px;
 		border-right:0px; border-bottom:0px; border-left:0px;}
 
 .trline{
@@ -219,4 +219,93 @@
 	color: gray;
 	font-size: 0.3rem;
 	margin-left: 0.5rem;
+}
+
+
+.setin{
+	width: 9.444rem;
+	height: 2.5rem;
+	margin: 0.3rem;
+	background-image: url(../image/4_2_1.png);
+	background-size: 9.444rem 2.5rem;
+	background-repeat: no-repeat;
+	text-align: center;
+	color: white;
+}
+.setin div:nth-child(1){
+	font-size: 0.46rem;
+	/*margin-top: 0.5rem;	*/
+	padding-top: 0.4rem;
+}
+.setin div:nth-child(2){
+	/*font-size: 0.46rem;*/
+	/*margin-top: 0.5rem;	*/
+	padding-top: 0.5rem;
+}
+
+.setinbutton button{
+	width: 3.44rem;height: 1.08rem;
+	color: white;
+	/*border: 1px solid #ddd;*/
+	/*cursor: pointer;*/
+	background-color: #bb61ff;
+	margin-left: 3.28rem;
+	margin-top: 0.8rem;
+	border:none;
+	border-radius: 0.1rem;
+}
+.setinbutton button:active{
+	background-color: gray;
+}
+
+
+.m-form{
+	width: 100%;
+	height:8.47rem;
+	/*background-color: pink; */
+}
+.m-form input{
+	border:none;
+	outline: medium;
+	width: 70%;
+	height: 1.6667rem;
+	/*text-align: right;*/
+	margin-left: 0.6rem;
+}
+.m-form label{
+	margin-left: 0.4rem;
+}
+
+.m-form input::-webkit-input-placeholder { /* WebKit browsers */ 
+font-size:0.3rem;
+} 
+.m-form input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+font-size:0.3rem;
+} 
+.m-form input::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+font-size:0.3rem;
+} 
+.m-form input:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+font-size:0.3rem;
+}
+
+.setouttxt{
+	color: gray;
+	font-size: 0.3rem;
+	margin-left: 0.4rem;
+	padding-top: 0.3rem;
+}
+.setoutbutton button{
+	width: 9.2rem;height: 1.08rem;
+	color: white;
+	/*border: 1px solid #ddd;*/
+	/*cursor: pointer;*/
+	background-color: #bb61ff;
+	margin-left: 0.4rem;
+	margin-top: 0.8rem;
+	border:none;
+	border-radius: 0.1rem;
+}
+.setoutbutton button:active{
+	background-color: gray;
 }

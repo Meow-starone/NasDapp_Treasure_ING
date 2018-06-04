@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>未中奖</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+      <!-- <link href="../css/bootstrap.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="../css/child2.css">
+    <script type="text/javascript">
+  
+    (function() {
+        var newRem = function() {
+        var html = document.documentElement;
+        html.style.fontSize = html.getBoundingClientRect().width / 10 + 'px';
+        };
+        window.addEventListener('resize', newRem, false);
+        newRem();
+    })();
+    </script>
+</head>
+<body>
+	<div class="sessionbanner">
+		<a href="../index.html"><img src="../image/1_6_01.jpg"></a>
+		<span>第<span id="bidid">123456</span>期</span>
+	</div>
+    <hr class="hrbase">
+    <div class="firstimg"><img src="../image/1_6_05.jpg"></div>
+
+    <div class="wait">
+        <div class="waitl">
+            <div class="wait1">价格：<span id="pervalue">1</span>LOTE/份<br>奖励：<span id="totalSum">100</span>LOTE</div>
+            <div class="wait2"></div>
+        </div>
+        <div class="wait3"></div>
+    </div>
+    <div class="wait4">
+        <div class="wait41">区块初始高度：<span id="startHeight">123456789</span></div>
+        <div class="wait42">立即查看</div>
+    </div>
+    <img style="width: 10rem;height: 1.4rem;" src="../image/2_1_06.jpg">
+    <div class="ing">
+        <img style="width: 10rem;height: 0.694rem;" src="../image/2_1_07.jpg">
+        <div class="ing1">初始区块高度<br><span id="startHeight1">123456789</span></div>
+        <div class="ing2">开奖区块高度<br><span id="fundHeight">123456789</span></div>
+        <div class="ing3">当前区块高度<br>123456789</div>
+    </div>
+
+    <img style="width: 10rem;height: 1.4rem;" src="../image/2_1_09.jpg">
+    <div class="res">
+        <div class="res1">
+            <div>中奖者号码：123456789</div>
+            <div>参与总数：1000</div>
+        </div>
+        <div class="res2">
+            <div>购买数量：10/份</div>
+            <div>开奖区块高度：123456789</div>
+        </div>
+        <div class="res3">
+            <div>开奖nonce值：0x54sd541s53d45d45as5</div>
+            <div></div>
+        </div>
+        <div class="res4">查看nonce值 >></div>
+    </div>
+
+    <img style="width: 10rem;height: 1.4rem;" src="../image/2_1_11.jpg">
+    <div class="algo">
+       <div class="algo1">
+           <div>固定值：123456789</div>
+           <div>nonce转换：4565454456466</div>
+       </div>
+       <div class="algo2">中奖者号码：（12345679%123456）+ 1 + 123456789</div> 
+    </div>
+
+    <div class="extiif">
+        <div id="miao1" class="extiif1">全部参与记录</div>
+        <div id="miao2" class="extiif2">未知页面</div>
+    </div>
+    <iframe  class="miao" src="1_6_1.html" scrolling="yes" frameborder="0"></iframe>
+
+
+     <script src="../js/jquery.min.js"></script>
+     <script src="../js/neb.js"></script>
+     <script src="../js/nebulas.js"></script>
+     <script type="text/javascript">
+    $(function () { 
+    $("#miao1").click(function () { 
+        $("iframe").attr("src", "1_6_1.html"); 
+    }); 
+
+    $("#miao2").click(function () { 
+        $("iframe").attr("src", "1_6_2.html"); 
+    }); 
+}); 
+     </script>
+    
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $.ajax({
+          method: "GET",
+          url: "http://192.168.1.212:3010/dollars/filter/search?limit=20&page=1",
+        })
+        .done(function(data) {
+            var getarrdata = data.data[0][0];
+            var {bidid} = getarrdata;
+            $("#bidid").text(bidid);
+            var {pervalue} = getarrdata;
+            $("#pervalue").text(pervalue);
+            var {totalSum} = getarrdata;
+            $("#totalSum").text(totalSum);
+            var {startHeight} = getarrdata;
+            $("#startHeight,#startHeight1").text(startHeight);
+            var fundHeight = startHeight + 9;
+            $("#fundHeight").text(fundHeight);
+        
+            
+        });
+        });
+    </script>>
+
+
+<script type="text/javascript">
+    
+
+    let Nebulas = require('nebulas');
+    let neb = new Neb();
+         var HttpRequest = require("nebulas").HttpRequest;
+         const PROVIDER_NEB = "http://192.168.1.59:8685"
+
+         neb.setRequest(new Nebulas.HttpRequest(PROVIDER_NEB))
+         var miaomiao = neb.api;
+         miaomiao.latestIrreversibleBlock().then(function(blockData) {
+                console.log(blockData);
+         });
+</script>
+
+</body>
+</html>

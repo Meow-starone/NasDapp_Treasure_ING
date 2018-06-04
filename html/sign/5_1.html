@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>登陆中心</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/sign.css">
+
+    <script type="text/javascript">
+    (function() {
+        var newRem = function() {
+        var html = document.documentElement;
+        html.style.fontSize = html.getBoundingClientRect().width / 10 + 'px';
+        };
+        window.addEventListener('resize', newRem, false);
+        newRem();
+    })();
+    </script>
+</head>
+<body>
+    <div class="header">
+        <img src="../image/arrowleft.jpg">
+        <span>登陆中心</span>
+    </div>
+
+    <div class="m-form">
+      
+      
+        <div class="msg" id="message"></div>
+        <div>
+          <label for="telephone"></label>
+          <input id="telephone" placeholder="请输入6-12位帐户名" name="telephone" type="txt" class="u-txt" required pattern="^[a-zA-Z0-9_-||\u4e00-\u9fa5]{6,12}$"
+                 ><br/>
+        </div>
+        <hr class="hrbiu">
+
+        <div>
+          <label for="address"></label>
+          <input style="width: 72%;float: left;" id="verification" placeholder="请输入Nas钱包地址" name="address" type="txt" class="u-txt"><br/>
+          <div class="ver"></div> 
+         <hr class="hrbiu">
+        </div>
+        <div>
+          <label for="password"></label>
+          <input id="password" placeholder="请输入密码" name="password" type="password" class="u-txt"><br/>
+         <hr class="hrbiu">
+        </div>
+        <div>
+          <label for="invitation"></label>
+          <input id="invitation" placeholder="请输入邀请码" name="invitation" type="txt" class="u-txt"><br/>
+         <hr class="hrbiu">
+        </div>
+        <div class="losspassword">绑定邮箱赠送100BIPA</div>
+        <div><button name="loginBtn">注 册</button></div>
+      
+    </div>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+
+</body>
+</html>
+<script type="text/javascript">
+  
+    $(document).ready(function(){
+
+         $("button").click(function(){
+         var body ={
+           userName: $("#telephone").val(), 
+           password: $("#password").val(),
+           address: $("#address").val()
+           // verification: $("#verification").val()
+           // invitation: $("#invitation").val()
+         }
+          console.log(body)
+          $.post('http://192.168.1.212:3010/register',body)
+          .done((data)=>{
+              console.log(data)
+          if(data.code==0){
+            window.location.href = '../user.html'
+            // alert(data.msg)
+          }
+          else
+            {alert(data.msg)}
+          })
+          .fail(err=>{
+              console.log(err)
+          })
+        });
+});
+
+</script>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>登陆中心</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/sign.css">
+
+    <script type="text/javascript">
+    (function() {
+        var newRem = function() {
+        var html = document.documentElement;
+        html.style.fontSize = html.getBoundingClientRect().width / 10 + 'px';
+        };
+        window.addEventListener('resize', newRem, false);
+        newRem();
+    })();
+    </script>
+</head>
+<body>
+    <div class="header">
+        <a href="../index.html"><img src="../image/arrowleft.jpg"></a>
+        <span>登陆中心</span>
+    </div>
+
+    <div class="m-form">
+      
+      
+        <div class="msg" id="message"></div>
+        <div>
+          <label for="filed"></label>
+          <input id="filed" placeholder="账户/手机号" name="filed" type="txt" class="u-txt" 
+                 ><br/>
+                 <!-- 验证手机号和邮箱的正则 -->
+
+        </div>
+        <hr class="hrbiu">
+        <div>
+          <label for="password"></label>
+          <input id="password" placeholder="密码" name="password" type="password" class="u-txt"><br/>
+         <hr class="hrbiu">
+        </div>
+        <a href="5_2.html"><div class="losspassword">忘记密码？</div></a>
+        <div><button name="loginBtn">登　录</button></div>
+        <a href="5_1.html"><div class="signup">注册账号>></div></a>
+      
+    </div>
+
+
+
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+</body>
+</html>
+
+<script type="text/javascript">
+$(function(){
+    $("button").click(function(){
+        var a = $("#filed").val(); 
+        var b = $("#password").val();
+        var c = 1;
+        var reg = /^[a-zA-Z]{1}([a-zA-Z0-9]|[._]){3,15}|1[0-9]{10}$/;
+        areg = reg.test(a);
+        
+        if(areg==false){alert("请输入正确的用户名");
+                  $("#filed").val("");
+                  $("#password").val("");
+                  c = 0;
+        }
+        else{
+                console.log(c);
+                if(c == 1){
+                  var body = {filed:a,password:b};
+                  $.ajax({
+                      type: "POST",
+                      url: "http://192.168.1.212:3010/login",
+                      data: body, 
+                      success: function(data){
+                              console.log(body);
+                              console.log(data.code,data.msg);       
+                              }
+                          })
+                }  
+                
+            }
+
+        
+    });
+});
+</script>
+ 

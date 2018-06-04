@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>忘记密码</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/sign.css">
+
+    <script type="text/javascript">
+    (function() {
+        var newRem = function() {
+        var html = document.documentElement;
+        html.style.fontSize = html.getBoundingClientRect().width / 10 + 'px';
+        };
+        window.addEventListener('resize', newRem, false);
+        newRem();
+    })();
+    </script>
+</head>
+<body>
+    <div class="header">
+        <img src="../image/arrowleft.jpg">
+        <span>忘记密码</span>
+    </div>
+
+    <form action="./login" class="m-form" name="loginForm" target="result" autocomplete="off">
+      
+      
+        <div class="msg" id="message"></div>
+        <div>
+          <label for="telephone"></label>
+          <input id="telephone" placeholder="请输入邮箱" name="telephone" type="txt" class="u-txt" 
+                 ><br/>
+        </div>
+        <hr class="hrbiu">
+
+        <div>
+          <label for="password"></label>
+          <input style="width: 72%;float: left;" id="password" placeholder="请输入验证码" name="password" type="password" class="u-txt"><br/>
+          <div class="ver"><button>发 送</button></div> 
+         <hr class="hrbiu">
+        </div>
+        
+        
+        <a href="4_7.html"><div><button  style="letter-spacing: 0.06rem;" name="loginBtn">找回密码</button></div></a>
+      
+    </form>
+
+</body>
+</html>

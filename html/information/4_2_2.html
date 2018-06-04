@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>转出地址</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/inf.css">
+    <style type="text/css">
+    body{
+        background-color: white;
+    }
+    </style>
+
+    <script type="text/javascript">
+    (function() {
+        var newRem = function() {
+        var html = document.documentElement;
+        html.style.fontSize = html.getBoundingClientRect().width / 10 + 'px';
+        };
+        window.addEventListener('resize', newRem, false);
+        newRem();
+    })();
+    </script>
+</head>
+<body>
+    <div class="header">
+        <a href="4_2.html"><img src="../image/arrowleft.jpg"></a>
+        <span>转出地址</span>
+    </div>
+    
+    <div class="setin">
+        <div>ETH</div>
+        <div>余额：100000</div>   
+    </div>
+
+<form action="./login" class="m-form" name="loginForm" target="result" autocomplete="off">
+
+        <div>
+          <label for="telephone">收款人地址:</label>
+          <input style="margin-left: 0.3rem;" id="telephone" placeholder="请填写收款人钱包地址" name="telephone" type="txt" class="u-txt" 
+                 ><br/>
+
+
+        </div>
+        <hr class="hrbiu" style="width: 8rem;"align="right";>
+        <div>
+          <label for="password">转出数量:</label>
+          <input id="password" placeholder="请填写转出数量" name="password" type="txt" class="u-txt"><br/>
+         <hr class="hrbiu">
+        </div>
+
+        <hr class="hrbiu" style="width: 8rem;"align="right";>
+        <div>
+          <label for="password">手续费用:</label>
+          <input id="password" placeholder="0.003ETH" name="password" type="txt" class="u-txt"><br/>
+         <hr class="hrbiu" style="width: 8rem;"align="right";>
+        </div>
+        <div class="setouttxt">注意！<br>
+            最小提币数量为>0.10300000<br>
+            单次最大提币数量为3000.00000000</div>
+
+</form>
+
+    <div class="setoutbutton">
+        <button name="loginBtn" onclick="clicked();">确 认</button>
+    </div>
+
+    <script type="text/javascript" src="../js/nebPay.js"></script>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+function clicked() {
+    let Nebpay = require('nebpay');
+    let nebpay = new Nebpay();
+        // let args = ["n1SAQy3ix1pZj8MPzNeVqpAmu1nCVqb5w8c"];
+        var callArgs = "[\"" + $("#search_value").val() + "\",\"" + $("#add_value").val() + "\"]";
+        var toaddress = $("#telephone").val();
+        var amount = $("#password").val();
+        var callFunction = "save";
+        var options = {
+                listener: undefined,//根据需求返回值
+            };
+        nebpay.call(
+                    toaddress, 
+                    amount,
+                    callFunction, 
+                    callArgs,
+                    options 
+                    );
+}
+</script>
+    
+</body>
+</html>
