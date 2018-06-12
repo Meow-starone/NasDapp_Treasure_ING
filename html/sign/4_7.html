@@ -4,106 +4,44 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
     <title>修改密码</title>
-    <link rel="stylesheet" type="text/css" href="../css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../css/sign.css">
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/sign.css">
+    <script src="../../js/style.js"></script>
 
-    <script type="text/javascript">
-    (function() {
-        var newRem = function() {
-        var html = document.documentElement;
-        html.style.fontSize = html.getBoundingClientRect().width / 10 + 'px';
-        };
-        window.addEventListener('resize', newRem, false);
-        newRem();
-    })();
-    </script>
 </head>
 <body>
     <div class="header">
-        <img src="../image/arrowleft.jpg">
+        <a href="javascript:;" onClick="javascript :history.back(-1);"><img src="../../image/arrowleft.jpg"></a>
         <span>修改密码</span>
     </div>
 
     <div class="m-form">
-      
+
         <div>
           <div class="getusername">zwjjyzz</div>
-         <hr class="hrbiu">
-        </div>
+          <hr class="hrbiu">
+      </div>
       
-        
-        <div>
+
+      <div>
           <label for="telephone"></label>
           <input id="telephone" placeholder="请输入8-12位新密码" name="telephone" type="password" class="u-txt" required="required"><br/>
-        </div>
-        <hr class="hrbiu">
+      </div>
+      <hr class="hrbiu">
 
-        <div>
+      <div>
           <label for="password"></label>
           <input id="password" placeholder="请再次输入" name="password" type="password" class="u-txt" required="required"><br/>
-         <hr class="hrbiu">
-        </div>
+          <hr class="hrbiu">
+      </div>
 
-        <div><button name="loginBtn">确认修改</button></div>
-
-      
-    </div>
-<script type="text/javascript" src="../js/jquery.min.js"></script>
-</body>
-</html>
-<script type="text/javascript" src="../js/jquery.min.js"></script>
-
+      <div><button class="passrevise" name="loginBtn">确认修改</button></div>
+  </div>
 </body>
 </html>
 
-<script type="text/javascript">
-$(function(){
-    $("button").click(function(){ 
-        var a = $("#telephone").val();
-        var b = $("#password").val();
-        var c = 1;
-        var reg = /^[a-zA-Z0-9]{8,12}$/;
-        abreg = reg.test(a) && reg.test(b);
-        
-        if(a!==b){alert("两次输入的密码不一致");
-                  $("#telephone").val("");
-                  $("#password").val("");
-                  c = 0;
-        }
-        else{
-                if(abreg == false){
-                    alert("密码长度为8-12位");
-                    $("#telephone").val("");
-                    $("#password").val("");
-                    c = 0;
-                }
-            }
-            console.log(c);
-        if(c == 1){
-                    $.ajax({
-                            url: "http://192.168.1.212:3010/users/password",
-                            type: "POST",
-                            data: {password:$("#password").val()},
-                            dataType: "json",
-                            success: function(data){
-                                     console.log(body);
-                                     console.log(data.code,data.msg);       
-                            }
-                    });
-        }
-    });
-});
-
-
-</script>
-<!-- 
-      var body = {password:$("#password").val()}
-                    $.ajax({
-                        type: "PUT",
-                        url: "http://192.168.1.212:3010/users/password",
-                        data: {password:$("#password").val()}, 
-                        success: function(data){
-                                console.log(body);
-                                console.log(data.code,data.msg);       
-                                }
-                            }) -->
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/logic.js"></script>
+<script src="../../js/dataget.js"></script>
+</body>
+</html>

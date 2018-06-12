@@ -7,40 +7,40 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/orderbanner.css">
     <script src="js/style.js"></script>
+    <style type="text/css">
+        body{
+            
+        }
+    </style>
 </head>
 <body>
-
-
-
-     <div class="container">
-        <div class="wrap" style="left: -10rem;">
-            <img src="./image/5.jpg" alt="">
-            <img src="./image/1.jpg" alt="">
-            <img src="./image/2.jpg" alt="">
-            <img src="./image/3.jpg" alt="">
-            <img src="./image/4.jpg" alt="">
-            <img src="./image/5.jpg" alt="">
-            <img src="./image/1.jpg" alt="">
+    
+    <div id="lunbobox">
+        <div class="lunbo">
+            <a href="#"><img id="indexbanner1" src="./image/1.jpg" alt=""></a>
+            <a href="#"><img id="indexbanner2" src="./image/2.jpg" alt=""></a>
+            <a href="#"><img id="indexbanner3" src="./image/4.jpg" alt=""></a>
+            <a href="#"><img id="indexbanner4" src="./image/1.jpg" alt=""></a>
         </div>
-        <div class="buttons">
-            <span class="on">1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>5</span>
-        </div>
-        <a href="javascript:;" class="arrow arrow_left">&lt;</a>
-        <a href="javascript:;" class="arrow arrow_right">&gt;</a>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <span></span>
     </div>
 
     <div class="newports">
-        <ul>
-            <li><img class="portsli1" src="image/notice_s.png"></li>
-            <li><img class="portsli2" src="image/notice_l.png"></li>
-            <li class="portsli3">恭喜用户5X0x购买翼龙蛋，获得1000bipa币</li>
-        </ul>   
+        <div class="newleft"><img src="./image/notice_s.png"></div>
+        <div class="newright">
+           <ul>
+              <li id="newports1">恭喜用户5X0x购买翼龙蛋，获得1000bipa币</li>
+              <li id="newports2">恭喜用户4X0x购买翼龙蛋，获得2000miao币</li>
+              <li id="newports3">恭喜用户7X0x购买翼龙蛋，获得3000miao币</li>
+          </ul>
+      </div>
     </div>
 
     <div class="nav">
@@ -68,22 +68,22 @@
         <div class="rescon">
             <div class="rescon1">
             <div class="viewfun">
-               <a href="html/child/1_6.html"><li><img class="imageresult" src="image/loft.png"></li></a>
-               <span>价格：1LOT/份</span><br>
-               <span>状态：已开奖</span><br>
-               <span>奖励：1000LOT</span> 
+               <a href="html/child/2_1.html"><li><img id="bid1img" class="imageresult" src="image/loft.png"></li></a>
+               <span>价格：<span id="bid1price">1LOT</span>/份</span><br>
+               <span>状态： &nbsp;已开奖</span><br>
+               <span>奖励：<span id="bid1fund">1000LOT</span></span> 
             </div>
             <div class="viewfun">
-               <li><img class="imageresult" src="image/loft.png"></li>
-               <span>价格：1LOT/份</span><br>
-               <span>状态：已开奖</span><br>
-               <span>奖励：1000LOT</span> 
+               <li><img id="bid2img" class="imageresult" src="image/loft.png"></li>
+               <span>价格：<span id="bid2price">1LOT</span>/份</span><br>
+               <span>状态： &nbsp;已开奖</span><br>
+               <span>奖励：<span id="bid2fund">1000LOT</span></span> 
             </div>
             <div class="viewfun">
-               <li><img class="imageresult" src="image/loft.png"></li>
-               <span>价格：1LOT/份</span><br>
-               <span>状态：已开奖</span><br>
-               <span>奖励：1000LOT</span>  
+               <li><img id="bid3img" class="imageresult" src="image/loft.png"></li>
+               <span>价格：<span id="bid2price">1LOT</span></s>/份</span><br>
+               <span>状态： &nbsp;已开奖</span><br>
+               <span>奖励：<span id="bid3fund">1000LOT</span></span>  
             </div>
             </div>
         </div>
@@ -94,10 +94,10 @@
         <div class="shops2">
             <ul>
                 <li><img src="image/coin1.png"></li>
-                <li><img src="image/coin2.png"></li>
+       <!--          <li><img src="image/coin2.png"></li>
                 <li><img src="image/coin1.png"></li>
                 <li><img src="image/coin2.png"></li>
-                <li><img src="image/coin2.png"></li>
+                <li><img src="image/coin2.png"></li> -->
             </ul>
         </div>
         <div class="shops3">更多 +</div>
@@ -106,25 +106,25 @@
 
     <div class="show">
         <div class="showbox">
-            <a href="html/child/2_1.html"><div><img src="image/loft.png"></div></a>
+            <div><img id="allbid1img" src="image/loft.png"></div>
             <div class="buyshop">
                 <div class="buytxt">
-                    <span>价格：100lote</span><br>
-                    <span>数量：100份</span><br>
-                    <span>奖励：1000lote</span>
+                    <span>价格：<span id="allbid1price">100lote</span></span><br>
+                    <span>数量：<span id="allbid1amount">100</span>份</span><br>
+                    <span>奖励：<span id="allbid1fund">1000lote</span></span>
                 </div>
-                <div class="buyimg"><img src="image/miao_07.jpg"></div>
+                <a href="html/child/1_6.html"><div id="buyimg1" class="buyimg"><img src="image/miao_07.jpg"></div></a>
             </div>
         </div>
         <div class="showbox">
-            <div><img src="image/loft.png"></div>
+            <div><img id="allbid2img" src="image/loft.png"></div>
             <div class="buyshop">
                 <div class="buytxt">
-                     <span>价格：100lote</span><br>
-                     <span>数量：100份</span><br>
-                    <span>奖励：1000lote</span>
+                     <span>价格：<span id="allbid2price">100lote</span></span><br>
+                    <span>数量：<span id="allbid2amount">100</span>份</span><br>
+                    <span>奖励：<span id="allbid2fund">1000lote</span></span>
                 </div>
-                <div class="buyimg"><img src="image/miao_07.jpg"></div>
+                <div class="buyimg"><img id="buyimg2" src="image/miao_07.jpg"></div>
             </div>
         </div>
         <div class="showbox">
@@ -154,11 +154,14 @@
     <div style="width: 100%;display: flex;margin-bottom: 1.2222rem;">
     <div class="footer">
 
-            <a href="html/main/index.html"><div id="f1" onclick="changepic();" class="footer1a"></div></a>
+            <a href="index.html"><div id="f1" onclick="changepic();" class="footer1a"></div></a>
             <a href="html/main/lottery.html"><div id="f2" onclick="changepic2();" class="footer2"></div></a>
-            <a href="html/main/order.html"><div id="f3" onclick="changepic3();" class="footer3"></div></a>
+            <div id="f3" onclick="getloginor();" class="footer3"></div>
             <a href="html/main/user.html"><div id="f4" onclick="changepic4();" class="footer4"></div></a>     
     </div>
-    <script type="text/javascript" src="js/canjs.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/logic.js"></script>
+    <script src="js/dataget.js"></script>
+
 </body>
 </html>

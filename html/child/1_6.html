@@ -6,6 +6,7 @@
      <title>第123456期</title>
      <link rel="stylesheet" type="text/css" href="../../css/reset.css">
      <link rel="stylesheet" type="text/css" href="../../css/child2.css">
+     <link rel="stylesheet" type="text/css" href="../../css/lottery.css">
      <script src="../../js/style.js"></script>
  </head>
  <body>
@@ -19,7 +20,7 @@
     <div class="txt1">价格：<span id = "pervalue">1</span>LOTE/份</div>
     <div class="txt2">
         <img src="../../image/1_6_08.jpg">
-        <div class="txt2txt">奖励：<span id = "totalSum">100</span>LOTE</div>
+        <div class="txt2txt">奖励：<span id = "reward">100</span>LOTE</div>
     </div>
 </div>
 <div class="lanner">
@@ -47,12 +48,12 @@
 
     <div class="nowtxt">
         <img src="../../image/1_6_11.jpg">
-        <div class="txts">每份投注可获得1个BIPA奖励</div>
+        <div class="txts">每份投注可获得<span id="eachfund">1</span>个BIPA奖励</div>
     </div>
 
     <div style="margin-left: 0.2rem;" class="nowtxt">
         <img src="../../image/1_6_11.jpg">
-        <div class="txts">首次投注可获得100个BIPA奖励</div>
+        <div class="txts">首次投注可获得<span id="firstfund">100个BIPA奖励</span></div>
     </div>
 </div>
 <hr class="hrbase" style="width: 10rem;">
@@ -75,21 +76,21 @@
         <div>余额：<span>0.00012eos</span></div>
     </div>
     <div class="confirm">
-        <div class="confirmimg" onclick="clicked();">立即购买</div>
+        <div class="confirmimg" onclick="clickedbuy();">立即购买</div>
     </div>
 </div>
 
 <hr class="hrbase" style="width: 10rem;">
 <div class="extiif">
-   <div id="miao1" class="extiif1">全部参与记录</div>
-   <div id="miao2" class="extiif2">未知页面</div>
+   <div id="canyu1" class="extiif1 over_2">全部参与记录</div>
+   <div id="canyu2" class="extiif2">我的参与记录</div>
 </div>
-<iframe  class="miao" src="1_6_1.html" scrolling="yes" frameborder="0"></iframe>
+<iframe  class="miaohe" src="1_6_1.html" scrolling="yes" frameborder="0"></iframe>
 
-<script src="../../js/jquery.min.js"></script>
 <script type="text/javascript" src="../../js/nebPay.js"></script>
 <script type="text/javascript" src="../../js/nebulas.js"></script>
 <script type="text/javascript" src="../../js/neb.js"></script>
+<script type="text/javascript" src="../../js/jquery.min.js"></script>
 <script src="../../js/logic.js"></script>
 <script src="../../js/dataget.js"></script>
 

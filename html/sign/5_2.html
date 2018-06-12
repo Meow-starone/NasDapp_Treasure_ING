@@ -4,27 +4,17 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
     <title>忘记密码</title>
-    <link rel="stylesheet" type="text/css" href="../css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../css/sign.css">
-
-    <script type="text/javascript">
-    (function() {
-        var newRem = function() {
-        var html = document.documentElement;
-        html.style.fontSize = html.getBoundingClientRect().width / 10 + 'px';
-        };
-        window.addEventListener('resize', newRem, false);
-        newRem();
-    })();
-    </script>
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/sign.css">
+    <script src="../../js/style.js"></script>
 </head>
 <body>
     <div class="header">
-        <img src="../image/arrowleft.jpg">
+        <a href="5.html"><img src="../../image/arrowleft.jpg"></a>
         <span>忘记密码</span>
     </div>
 
-    <form action="./login" class="m-form" name="loginForm" target="result" autocomplete="off">
+    <div class="m-form" name="loginForm" target="result" autocomplete="off">
       
       
         <div class="msg" id="message"></div>
@@ -44,8 +34,9 @@
         
         
         <a href="4_7.html"><div><button  style="letter-spacing: 0.06rem;" name="loginBtn">找回密码</button></div></a>
-      
-    </form>
-
+    </div>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/logic.js"></script>
+<script src="../../js/dataget.js"></script>
 </body>
 </html>

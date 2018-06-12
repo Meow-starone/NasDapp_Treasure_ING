@@ -1,0 +1,75 @@
+单个夺宝应当有四种状态：即将售卖1/正在售卖2/正在开奖3/已开奖4
+所有夺宝：数据库五个表单（user单独建表）
+
+正在售卖的夺宝状态跳转到1_6下注界面
+其它状态跳转到2_1查询界面
+
+
+/*
+ * index主页面1（提供最新三条已开奖夺宝和正在售卖&&即将售卖的夺宝列表两个接口）
+ * /url
+ * body:object{banner轮播:[bannerurl4张];
+	       已开奖三条sports:[userId，shopsID，reward,币名]
+	       最新揭晓：[imgurl,price,reward，夺宝状态]
+	       全部商品：[imgurl，price，amount，reward，夺宝状态]	
+	       }
+ * return result:object
+ * GET
+ */
+
+/*
+ * lottery_1已开奖（提供最新六条已开奖夺宝）
+ * /url
+ * body:object{其中一条:[imgurl，price，reward，userId，夺宝状态];	
+	       }
+ * return result:object
+ * GET
+ */
+
+/*
+ * lottery_2即将开奖（提供售卖结束但未开奖的夺宝列表）
+ * /url
+ * body:object{其中一条:[imgurl，price，reward，夺宝状态];（我加上未开奖代替userId）	
+	       }
+ * return result:object
+ * GET
+ */
+
+/*
+ * 主页面3-我的订单（提供user已下注的所有夺宝列表）
+ * /url
+ * body:object{其中一条:[bidID，下注的时间，币名，状态，下注号码段（小于等于夺宝次数），中奖号码段：(若已开奖)];	
+	       }
+ * return result:object
+ * GET
+ */
+
+
+/*
+ * 主页面4-我的（提供user列表）(根据我post的用户名传)
+ * /url
+ * body:object{user:[userId,是否签到]
+	       }
+ * return result:object
+ * GET
+ */
+
+
+
+/*
+ * 2_1单个夺宝查询界面（根据状态不同信息不同）
+ * /url
+ * body:三种状态涉及到的参数{夺宝状态，bidId，startHeight，nonce，当前区块高度，中奖ID，amount，中奖ID购买份数，
+	       }
+ * return result:object
+ * GET
+ */
+
+/*
+ * 1_6下注夺宝界面（首先get数据）
+ * /url
+ * body:涉及到的参数{夺宝状态，bidId，price，reward，remainct，
+	       }
+ * return result:object
+ * POST
+ */

@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
     <title>中奖啦！</title>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../../css/lottery.css">
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
@@ -13,12 +12,14 @@
 <body>
 	<div class="bannerbiu"><img src="../../image/emm_01.jpg"></div>
     <div class="exchange">
-        <div id="miao1" class="over">已开奖</div>
+        <div id="miao1" class="over over_2">已开奖</div>
         <div id="miao2" class="willopen">即将开奖</div>
+
     </div>
     <div class="linegray"></div>
-    <iframe  class="miao" src="lottery_iframe.html" scrolling="no" frameborder="0"></iframe>
-
+    <!-- <div class="ifclass"> -->
+    <iframe class="miao" src="lottery_iframe.html" scrolling="yes" frameborder="0"></iframe>
+    <!-- </div> -->
 
 
     <div style="width: 100%;display: flex;margin-bottom: 1.2222rem;">
@@ -29,6 +30,8 @@
             <a href="order.html"><div id="f3" class="footer3"></div></a>
             <a href="user.html"><div id="f4" class="footer4"></div></a>     
         </div>
+    </div>
+
         <script src="../../js/jquery.min.js"></script>
         <script src="../../js/logic.js"></script>
     </body>

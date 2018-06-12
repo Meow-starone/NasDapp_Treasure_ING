@@ -2,55 +2,43 @@
 <html>
 <head>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
-    <title>绑定邮箱</title>
-    <link rel="stylesheet" type="text/css" href="../css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../css/sign.css">
-
-    <script type="text/javascript">
-    (function() {
-        var newRem = function() {
-        var html = document.documentElement;
-        html.style.fontSize = html.getBoundingClientRect().width / 10 + 'px';
-        };
-        window.addEventListener('resize', newRem, false);
-        newRem();
-    })();
-    </script>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <title>绑定邮箱</title>
+  <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../../css/sign.css">
+  <script src="../../js/style.js"></script>
 </head>
 <body>
-    <div class="header">
-        <a href="../user.html"><img src="../image/arrowleft.jpg"></a>
-        <span>绑定邮箱</span>
+  <div class="header">
+    <a href="../main/user.html"><img src="../../image/arrowleft.jpg"></a>
+    <span>绑定邮箱</span>
+  </div>
+
+  <form action="./login" class="m-form m-email" name="loginForm" target="result" autocomplete="off">
+
+
+    <div>
+      <label for="email">邮箱：</label>
+      <input id="email" placeholder="请输入正确的邮箱以绑定账号" name="email" type="txt" class="u-txt" 
+      ><br/>
+    </div>
+    <hr class="hrbiu">
+    <div>
+      <label for="email">密码：</label>
+      <input id="email" placeholder="请输入6-12位英文字母、数字、特殊字符设置密码" name="email" type="txt" class="u-txt" 
+      ><br/>
+    </div>
+    <hr class="hrbiu">
+
+    <div>
+      <label style="float: left;line-height: 1.6667rem;" for="password">验证码：</label>
+      <input style="width: 72%;float: left;width: 55%;margin-left: 0rem;" id="password" placeholder="请输入验证码" name="password" type="password" class="u-txt"><br/>
+      <div class="ver"><button>发 送</button></div> 
+      <hr class="hrbiu">
     </div>
 
-    <form action="./login" class="m-form m-email" name="loginForm" target="result" autocomplete="off">
-      
-      
-        <div>
-          <label for="email">邮箱：</label>
-          <input id="email" placeholder="请输入正确的邮箱以绑定账号" name="email" type="txt" class="u-txt" 
-                 ><br/>
-        </div>
-        <hr class="hrbiu">
-        <div>
-          <label for="email">密码：</label>
-          <input id="email" placeholder="请输入6-12位英文字母、数字、特殊字符设置密码" name="email" type="txt" class="u-txt" 
-                 ><br/>
-        </div>
-        <hr class="hrbiu">
-
-        <div>
-          <label style="float: left;line-height: 1.6667rem;" for="password">验证码：</label>
-          <input style="width: 72%;float: left;width: 55%;margin-left: 0rem;" id="password" placeholder="请输入验证码" name="password" type="password" class="u-txt"><br/>
-          <div class="ver"><button>发 送</button></div> 
-         <hr class="hrbiu">
-        </div>
-        
-        
-        <div><button name="loginBtn">绑 定</button></div>
-      
-    </form>
-
+    <div><button name="loginBtn">绑 定</button></div>    
+  </form>
+    
 </body>
 </html>

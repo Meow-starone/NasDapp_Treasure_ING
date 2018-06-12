@@ -47,8 +47,9 @@ body{
 	width: 2.2rem;
 }
 .contentnav li:nth-child(4){
-	width: 2rem;
-	margin-left: 1.75rem;
+	width: 4.6rem;
+	margin-left: 0.5rem;
+	text-align: right;
 }
 .contentnav li:nth-child(5){
 	width: 1.6rem;

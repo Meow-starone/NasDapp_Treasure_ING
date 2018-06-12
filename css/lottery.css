@@ -25,11 +25,9 @@ vertical-align: middle;
 .exchange{
 	height: 1.25rem;
 	width: 100%;
-	background-color: pink;
-	font-size: 0.4rem;
-/*	background-image: url(../image/emm_04.jpg);
-	background-repeat: no-repeat;
-	background-size: 3.47222rem 1.13889rem;*/
+	font-size: 0.35rem;
+	font-weight: bold;
+	color: gray;
 }
 .over{
 	width: 4.513889rem;
@@ -47,6 +45,22 @@ vertical-align: middle;
 	line-height: 1.25rem;
 	margin-left: 0.46667rem;
 }
+.over_2{
+	background-color: #F0F8FF;
+	border-radius: 0.3rem;
+/*	width: 4.03889rem;
+	height: 1.05rem;
+	margin-left: 0.5rem;
+	margin-top: 0.1rem;*/
+}
+.willopen_2{
+	background-color: #F0F8FF;
+	border-radius: 0.3rem;
+/*	width: 4.03889rem;
+	height: 1.05rem;
+	margin-left: 0.88rem;
+	margin-top: 0.1rem;*/
+}
 .linegray{
 	width: 100%;
 	height: 0.138889rem;
@@ -59,7 +73,7 @@ vertical-align: middle;
     /*height: 15rem;*/
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     justify-content:space-around;
     margin-top: 0.4rem;
 }
@@ -82,13 +96,17 @@ vertical-align: middle;
 
 
 /*iframe*/
+/*.ifclass{
+	overflow: hidden;
+    width: 10rem;
+    height: 100%;
+}*/
 .miao{
 	width: 10rem;
-	height: 18.916667rem;
+	height: 100%;
+	/*overflow: hidden;*/
+    /*overflow-x: auto;	*/
 }
-
-
-
 
 
 

@@ -1,67 +1,40 @@
 /*轮播样式*/
-    .container {
-        position: relative;
-        width: 10rem;
-        height: 4.861111rem;
-        /*margin: auto 0 auto;*/
-        /*box-shadow: 0 0 5px green;*/
-        overflow: hidden;
-    }
-    .container .wrap {
-        position: absolute;
-        width: 70rem;
-        height: 4.861111rem;
-        z-index: 1;
-    }
-    .container .wrap img {
-        float: left;
-        width: 10rem;
-        height: 4.861111rem;
-    }
-    .container .buttons {
-        position: absolute;
-        right: 5px;
-        bottom:40px;
-        width: 150px;
-        height: 10px;
-        z-index: 2;
-    }
-    .container .buttons span {
-        margin-left: 5px;
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: green;
-        text-align: center;
-        color:white;
-        cursor: pointer;
-    }
-    .container .buttons span.on{
-        background-color: red;
-    }
-    .container .arrow {
-        position: absolute;
-        top: 35%;
-        color: green;
-        padding:0px 14px;
-        border-radius: 50%;
-        font-size: 50px;
-        z-index: 2;
-        display: none;
-    }
-    .container .arrow_left {
-        left: 10px;
-    }
-    .container .arrow_right {
-        right: 10px;
-    }
-    .container:hover .arrow {
-        display: block;
-    }
-    .container .arrow:hover {
-        background-color: rgba(0,0,0,0.2);
-    }
+#lunbobox {
+    width:10rem;
+    height:4.86111rem;
+    position:relative;
+}
+.lunbo {
+    width:10rem;
+    height:4.86111rem;
+}
+.lunbo img {
+    width:10rem;
+    height:4.8611rem;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+#lunbobox ul {
+    width:4rem;
+    position:absolute;
+    bottom:0.16rem;
+    right:1.7rem;
+    z-index:5;
+}
+#lunbobox ul li {
+    cursor:pointer;
+    width:0.2rem;
+    height:0.1rem;
+    border:1px solid #cccccc;
+    float:left;
+    list-style:none;
+    background-color: rgba(204,204,204,0.7);
+    text-align:center;
+    margin:0px 0.15rem 0px 0px;
+    border-radius: 0.05rem;
+}
+
 /*导航栏CSS*/
     .nav{
         width: 100%;
@@ -87,6 +60,50 @@
     }
 /*消息栏样式*/
     .newports{
+        width: 10rem;height: 0.723rem;
+        
+        margin-top: 0.13rem;
+        color: white;
+        font-size: 0.29rem;
+    }
+    .newleft{
+        float: left;
+        height: 0.4028rem;
+        width: 0.528rem;
+        margin-top: 0.18rem;
+        margin-left: 0.3rem;
+    }
+    .newleft img{
+        height: 0.4028rem;
+        width: 0.528rem;
+
+    }
+    .newright{
+        float: left;
+        height: 0.723rem;
+        width: 8rem;
+        margin-left: 0.3rem;
+        background-image: url(../image/notice_l.png);
+        background-repeat: no-repeat;
+        background-size: 7.75rem 0.723rem;
+        overflow: hidden;
+    }
+
+    .newright ul {
+        list-style:none;
+        width:100%;
+        height:100%;
+        margin-left: -0.2rem;
+        margin-top: 0.05rem;
+    }
+    .newright ul li {
+        width:100%;
+        height:0.723rem;
+        box-sizing:border-box;
+        line-height:0.723rem;
+        text-align:center;
+    }
+/*    .newports{
         width: 100%;
         height: 0.83333rem;
         text-align: center;
@@ -110,17 +127,11 @@
         margin-top:0.1rem;
     }
     .portsli3{
-        /*width: 7.44rem;
-        height: 0.69333rem;*/
         margin-top:-0.68rem;
         margin-left: 2.2rem;
         color: white;
         font-size: 0.28rem;
-        /*font-size: 0.34rem;*/
-        /*z-index: 998;*/
-        /*background-image: url(image/notice_l.png);*/
-        /*background-size: 7.44rem 0.69333rem;*/
-    }
+    }*/
 /*结果拦样式*/
     .result{
         margin-top: 0.1rem
@@ -149,21 +160,21 @@
     .viewfun span{margin-left: 0.2rem;}
 
 .linehr{
-    width:9.4667rem;
+    width:9.6rem;
     height:0.138889rem; 
     background:rgba(241,241,241,1);
-    margin-left: 0.138889rem;
+    margin-left: 0.192rem;
 }
 .rescon{
     display:flex;
     overflow: hidden;
-    height: 5.075rem;
+    height: 5.475rem;
 }
 .rescon1{
     display:flex;
     overflow: hidden;
     overflow-x: auto;
-     height: 5.275rem;
+    height: 5.83rem;
 
 }
 

@@ -234,7 +234,7 @@ body{
 .extiif{
 	width: 100%;
 	height: 1.3889rem;
-	background-color: pink;
+	/*background-color: pink;*/
 	color: gray;
 }
 .extiif1{
@@ -253,9 +253,9 @@ body{
 	line-height: 1.3889rem;
 	margin-left: 0.46667rem;
 }
-.miao{
+.miaohe{
 	width: 10rem;
-	height: 5rem;
+	height: 6rem;
 }
 
 
