@@ -162,19 +162,10 @@ body{
 	line-height: 1.6667rem;
 	font-size: 0.3334rem;
 }
-.quesimg{
-	float: right;
-	margin-right: 0.5rem;
-	height: 1.6667rem;
-	line-height: 1.6667rem;
-	width: 0.2222rem;
-	/*margin-top: 0.5rem;*/
-}
 .quesimg img{
-	width: 0.2222rem;
-	height: 0.4166rem;
+	width: 0.916667rem;
+	height: 1.6667rem;
 	float: right;
-	margin-top: 0.65rem;
 }
 .hrbiu{width: 9.3rem;border-top:0.0138889rem solid #f1dfff;font-size:0px;
 		border-right:0px; border-bottom:0px; border-left:0px;}

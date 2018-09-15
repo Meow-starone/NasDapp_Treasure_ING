@@ -12,45 +12,46 @@
 <body>
 	<div class="orderbanner">我的订单</div>
 	<div class="flexbox" style="width: 100%;/*background-color: pink;*/display: flex;flex-wrap: wrap;justify-content:space-around;">
-		<div class="flexcontent">
+		<div id="flexcontent1" class="flexcontent">
 			<div class="contentnav">
 				<ul>
 					<li><span><img src="../../image/pinkradiu.png"></span></li>
 					<li>BIPA</li>
-					<li>第<span id="userbidId">1234</span>期</li>
-					<li><span id="usertime" style="width: 3rem;">2018-05-10 12：26</span></li>
-					<!-- <li>12：26</li> -->
+					<li>第<span id="userbidId0"></span>期</li>
+					<li><span id="usertime0"></span></li>
+					<!--<li>12：26</li>-->
 				</ul>
 			</div>
 			<hr style="width: 8.8rem;border-top:0.0138889rem solid #f1dfff;font-size:0px;">
 			<div class="contentbox1">
-				<li>订单号码：<span id="userjoinnum" style="color: #bb61ff;font-weight: 700;">12345</span></li>
-				<li>我的号码：<span style="color: #bb61ff;font-weight: 700;">10000</span></li>
+				<li>订单号码：<span id="orderId1" style="color: #bb61ff;font-weight: 700; font-size: 0.2rem;"></span></li>
+				<li>我的号码：<span style="color: #bb61ff;font-weight: 700;"><span id="joinnumber01o"></span><span id="line0o">-</span><span id="joinnumber02o"></span></span></li>
 			</div>
 			<div class="contentbox2">
-				<li><span style="color: #bb61ff;font-weight: 700;"><span id="state">已开奖</span></span></li>
-				<li>中奖号码：<span style="color: #bb61ff;font-weight: 700;">10001</span></li>
+				<li><span style="color: #bb61ff;font-weight: 700;">已开奖</span></li>
+				<li>中奖号码：<span id="luckyNumber1o" style="color: #bb61ff;font-weight: 700;"></span></li>
 			</div>
 		</div>
 
 
-		<div class="flexcontent">
+		<div id="flexcontent2" class="flexcontent">
 			<div class="contentnav">
 				<ul>
 					<li><span><img src="../../image/pinkradiu.png"></span></li>
 					<li>BIPA</li>
-					<li>第<span id="userbidId">1234</span>期</li>
-					<li><span id="usertime" style="width: 3rem;">2018-05-10 12：26</span></li>
+					<li>第<span id="userbidId1"></span>期</li>
+					<li><span id="usertime1"></span></li>
+					<!--<li>12：26</li>-->
 				</ul>
 			</div>
 			<hr style="width: 8.8rem;border-top:0.0138889rem solid #f1dfff;font-size:0px;">
 			<div class="contentbox1">
-				<li>订单号码：<span style="color: #bb61ff;font-weight: 700;">12345</span></li>
-				<li>我的号码：<span style="color: #bb61ff;font-weight: 700;">10000</span></li>
+				<li>订单号码：<span id="orderId2" style="color: #bb61ff;font-weight: 700;font-size: 0.2rem;"></span></li>
+				<li>我的号码：<span style="color: #bb61ff;font-weight: 700;"><span id="joinnumber11o"></span><span id="line1o">-</span><span id="joinnumber12o"></span></span></li>
 			</div>
 			<div class="contentbox2">
 				<li><span style="color: #bb61ff;font-weight: 700;">已开奖</span></li>
-				<li>中奖号码：<span style="color: #bb61ff;font-weight: 700;">10001</span></li>
+				<li>中奖号码：<span id="luckyNumber2o" style="color: #bb61ff;font-weight: 700;"></span></li>
 			</div>
 		</div>
 
@@ -66,5 +67,6 @@
 
 		<script src="../../js/jquery.min.js"></script>
 		<script src="../../js/logic.js"></script>
+		<script src="../../js/dataget.js"></script>
 	</body>
 	</html>

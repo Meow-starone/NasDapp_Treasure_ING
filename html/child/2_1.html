@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
-    <title>未中奖</title>
+    <title>开奖详情页</title>
     <link rel="stylesheet" type="text/css" href="../../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../../css/child2.css">
     <link rel="stylesheet" type="text/css" href="../../css/lottery.css">
@@ -15,18 +15,18 @@
 		<span>第<span id="bididnext">123456</span>期</span>
 	</div>
     <hr class="hrbase">
-    <div class="firstimg"><img src="../../image/1_6_05.jpg"></div>
+    <div class="firstimg"><img id="firstimg" src="../../image/t1.png"></div>
 
     <div class="wait">
         <div class="waitl">
-            <div class="wait1">价格：<span id="pervalue1">1</span>LOTE/份<br>奖励：<span id="reward">100</span>LOTE</div>
+            <div class="wait1">价格：<span id="pervalue1">1</span>Nas/份<br>奖励：<span id="reward">100</span>Nas</div>
             <div class="wait2"></div>
         </div>
-        <div class="wait3"></div>
+        <div id="wait3" class="wait3"></div>
     </div>
     <div class="wait4">
         <div class="wait41">区块初始高度：<span id="startHeight">123456789</span></div>
-        <div class="wait42">立即查看</div>
+        <a href="https://explorer.nebulas.io/"><div class="wait42">立即查看</div></a>
     </div>
     <img style="width: 10rem;height: 1.4rem;" src="../../image/2_1_06.jpg">
     <div class="ing">
@@ -39,12 +39,12 @@
     <img style="width: 10rem;height: 1.4rem;" src="../../image/2_1_09.jpg">
     <div class="res">
         <div class="res1">
-            <div>中奖者号码：123456789</div>
-            <div>参与总数：1000</div>
+            <div>中奖者号码：<span id="lucky">0</span></div>
+            <div>参与总数：<span id="totaljoin">1000</span></div>
         </div>
         <div class="res2">
             <div>购买数量：10/份</div>
-            <div>开奖区块高度：123456789</div>
+            <div>开奖区块高度：<span id="fundHeight1">123456789</span></div>
         </div>
         <div class="res3">
             <div>开奖nonce值：0x54sd541s53d45d45as5</div>
@@ -64,7 +64,7 @@
 
  <div class="extiif">
     <div id="canyu1" class="extiif1 over_2">全部参与记录</div>
-    <div id="canyu2" class="extiif2 ">我的参与记录</div>
+    <div id="canyu2" class="extiif2">我的参与记录</div>
 </div>
 <iframe class="miaohe" src="1_6_1.html" scrolling="yes" frameborder="0"></iframe>
 

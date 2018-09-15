@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>更多</title>
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/inf.css">
+    <link rel="stylesheet" type="text/css" href="../../css/lottery.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <script src="../../js/style.js"></script>
+    <style type="text/css">
+        body{
+            background-color: white;
+        }
+    </style>
+
+</head>
+<body>
+<div class="header">
+    <a href="../../index.html"><img src="../../image/arrowleft.jpg"></a>
+    <span>Nas</span>
+</div>
+
+
+
+<div class="show">
+    <div class="showbox" style="margin-top: 0.3rem;">
+        <div><img id="allbid1img1" src="../../image/loft.png"></div>
+        <div class="buyshop">
+            <div class="buytxt">
+                <span>价格：<span id="allbid1price">1</span><span>Nas</span></span><br>
+                <span>数量：<span id="allbid1amount">100</span>份</span><br>
+                <span>奖励：<span id="allbid1fund">1000</span><span>Nas</span></span>
+            </div>
+            <a href="../child/1_6.html"><div id="buyimg1" class="buyimg"><img  src="../../image/miao_07.jpg"></div></a>
+        </div>
+    </div>
+    <div class="showbox" style="margin-top: 0.3rem;">
+        <div><img id="allbid2img1" src="../../image/loft.png"></div>
+        <div class="buyshop">
+            <div class="buytxt">
+                <span>价格：<span id="allbid2price">1</span><span>Nas</span></span><br>
+                <span>数量：<span id="allbid2amount">100</span>份</span><br>
+                <span>奖励：<span id="allbid2fund">100</span><span>Nas</span></span>
+            </div>
+            <a href="html/child/1_6.html"><div id="buyimg2" class="buyimg"><img src="../../image/miao_07.jpg"></div></a>
+        </div>
+    </div>
+    <div class="showbox" style="margin-top: 0.3rem;">
+        <div><img id="allbid3img1" src="../../image/loft.png"></div>
+        <div class="buyshop">
+            <div class="buytxt">
+                <span>价格：<span id="allbid3price">1</span><span>Nas</span></span><br>
+                <span>数量：<span id="allbid3amount">100</span>份</span><br>
+                <span>奖励：<span id="allbid3fund">100</span><span>Nas</span></span>
+            </div>
+            <a href="html/child/1_6.html"><div id="buyimg3" class="buyimg"><img src="../../image/miao_07.jpg"></div></a>
+        </div>
+    </div>
+    <div class="showbox" style="margin-top: 0.3rem;">
+        <div><img id="allbid4img1" src="../../image/loft.png"></div>
+        <div class="buyshop">
+            <div class="buytxt">
+                <span>价格：<span id="allbid4price">1</span><span>Nas</span></span><br>
+                <span>数量：<span id="allbid4amount">100</span>份</span><br>
+                <span>奖励：<span id="allbid4fund">100</span><span>Nas</span></span>
+            </div>
+            <a href="html/child/1_6.html"><div id="buyimg4" class="buyimg"><img src="../../image/miao_07.jpg"></div></a>
+        </div>
+    </div>
+    <div class="showbox" style="margin-top: 0.3rem;">
+        <a href="html/child/1_6.html"><div><img id="bid1img1" src="../../image/loft.png"></div></a>
+        <div class="buyshop">
+            <div class="buytxt">
+                <span>价格：<span id="bid1price">1</span><span>Nas</span></span><br>
+                <span>状态：已开奖</span><br>
+                <span>奖励：<span id="bid1fund">100</span><span>Nas</span></span>
+            </div>
+            <!--<a href="html/child/1_6.html"><div id="buyimg4" class="buyimg"><img src="../../image/miao_07.jpg"></div></a>-->
+        </div>
+    </div>
+    <div class="showbox" style="margin-top: 0.3rem;">
+        <a href="html/child/1_6.html"><div><img id="bid2img1" src="../../image/loft.png"></div></a>
+        <div class="buyshop">
+            <div class="buytxt">
+                <span>价格：<span id="bid2price">1</span><span>Nas</span></span><br>
+                <span>状态：已开奖</span><br>
+                <span>奖励：<span id="bid2fund">100</span><span>Nas</span></span>
+            </div>
+            <!--<a href="html/child/1_6.html"><div id="buyimg4" class="buyimg"><img src="../../image/miao_07.jpg"></div></a>-->
+        </div>
+    </div>
+</div>
+
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/logic.js"></script>
+<script src ="../../js/dataget.js"></script>
+</body>
+</html>
+
+<script>
+	$(document).ready(function () {
+		$.ajax({
+			method: "GET",
+			url: "http://192.168.1.131:3010/dollars/filter/search?limit=10&page=1",//正在售卖的四个商品
+		})
+			.done(function (data) {
+				if (data.data[0][0].totalSum == 20) {
+					$("#allbid1img1").attr("src", "../../image/t2.png");
+				}
+				else if (data.data[0][0].totalSum == 50) {
+					$("#allbid1img1").attr("src", "../../image/t3.png");
+				}
+				else if (data.data[0][0].totalSum == 100) {
+					$("#allbid1img1").attr("src", "../../image/t4.png");
+				}
+				else {
+					$("#allbid1img1").attr("src", "../../image/t1.png");
+				}
+
+				if (data.data[0][1].totalSum == 20) {
+					$("#allbid2img1").attr("src", "../../image/t2.png");
+				}
+				else if (data.data[0][1].totalSum == 50) {
+					$("#allzbid2img1").attr("src", "../../image/t3.png");
+				}
+				else if (data.data[0][1].totalSum == 100) {
+					$("#allbid2img1").attr("src", "../../image/t4.png");
+				}
+				else {
+					$("#allbid2img1").attr("src", "../../image/t1.png");
+				}
+
+				if (data.data[0][2].totalSum == 20) {
+					$("#allbid3img1").attr("src", "../../image/t2.png");
+				}
+				else if (data.data[0][2].totalSum == 50) {
+					$("#allbid3img1").attr("src", "../../image/t3.png");
+				}
+				else if (data.data[0][2].totalSum == 100) {
+					$("#allbid3img1").attr("src", "../../image/t4.png");
+				}
+				else {
+					$("#allbid3img1").attr("src", "../../image/t1.png");
+				}
+
+				if (data.data[0][2].totalSum == 20) {
+					$("#allbid4img1").attr("src", "../../image/t2.png");
+				}
+				else if (data.data[0][2].totalSum == 50) {
+					$("#allbid4img1").attr("src", "../../image/t3.png");
+				}
+				else if (data.data[0][2].totalSum == 100) {
+					$("#allbid4img1").attr("src", "../../image/t4.png");
+				}
+				else {
+					$("#allbid4img1").attr("src", "../../image/t1.png");
+				}
+
+			})
+  })
+
+
+	$(document).ready(function () {
+		$.ajax({
+			method: "GET",
+			url: "http://192.168.1.131:3010/dollars/filter/search?limit=3&page=1&new=true",//最新三条已开奖的夺宝接口
+		})
+			.done(function (data) {
+				if (data.data[0][0].totalSum == 20) {
+					$("#bid1img1").attr("src", "../../image/t2.png");
+				}
+				else if (data.data[0][0].totalSum == 50) {
+					$("#bid1img1").attr("src", "../../image/t3.png");
+				}
+				else if (data.data[0][0].totalSum == 100) {
+					$("#bid1img1").attr("src", "../../image/t4.png");
+				}
+				else {
+					$("#bid1img1").attr("src", "../../image/t1.png");
+				}
+
+				if (data.data[0][1].totalSum == 20) {
+					$("#bid2img1").attr("src", "../../image/t2.png");
+				}
+				else if (data.data[0][1].totalSum == 50) {
+					$("#bid2img1").attr("src", "../../image/t3.png");
+				}
+				else if (data.data[0][1].totalSum == 100) {
+					$("#bid2img1").attr("src", "../../image/t4.png");
+				}
+				else {
+					$("#bid2img1").attr("src", "../../image/t1.png");
+				}
+			})
+	})
+</script>

@@ -114,7 +114,7 @@ body{
 }
 .description{
 	width: 100%;
-	height: 4.6111rem;
+	height: 2.8rem;
 	/*background-color: gray;*/
 }
 .desti{
@@ -289,6 +289,15 @@ body{
 	/*clear: both;*/
 	float: left;
 	background-image: url(../image/2_1_03.jpg);
+	background-size: 5rem 3.194rem;
+	background-repeat: no-repeat;
+}
+.wait3lucky{
+	width: 5rem;
+	height: 3.194rem;
+	/*clear: both;*/
+	float: left;
+	background-image: url(../image/zj.png);
 	background-size: 5rem 3.194rem;
 	background-repeat: no-repeat;
 }

@@ -1,3 +1,6 @@
+$.ajaxSetup({ xhrFields: {withCredentials: true}});
+
+
 //lottery子页面切换
 $(function () { 
 	$("#miao1").click(function () { 
@@ -10,16 +13,20 @@ $(function () {
 }); 
 //下注数量逻辑
         //+++
+//6的倍数会溢出
+var pricebid = sessionStorage.getItem('pricebid');
+var remainCt = sessionStorage.getItem('remainCt');
+//console.log(pricebid);
 function sub(psid) {
 	var yzquantity = $(".yzquantity" + psid).val();
 	if (yzquantity > 0) {
 		if (yzquantity == 1) {
-			alert("已到达最小数量！");
+//			alert("已到达最大数量！");
 			return;
 		}
 		yzquantity--;
 		$(".yzquantity" + psid).val(yzquantity);
-		var amount = $("#ct").val() * 100 + "EOS";
+		var amount = ($("#ct").val() * pricebid).toFixed(3) + "Nas";
 		$("#amount").text(amount);
 	} else {
 		alert("请输入有效数量！");
@@ -29,9 +36,13 @@ function sub(psid) {
 function plus(psid) {
 	var yzquantity = $(".yzquantity" + psid).val();
 	if (yzquantity > 0) {
+		if (yzquantity == remainCt) {
+			alert("已到达可购买最大数量！");
+			return;
+		}
 		yzquantity++;
 		$(".yzquantity" + psid).val(yzquantity);
-		var amount = $("#ct").val() * 100 + "EOS";
+		var amount = ($("#ct").val() * pricebid).toFixed(3) + "Nas";
 		$("#amount").text(amount);
 	} else {
 		alert("请输入有效数量！");
@@ -55,10 +66,10 @@ $(function () {
 
 	$("#ct").change(function () {
 		var num = $(this).val();
-		var amount = num * 100 + "EOS";
+		var amount = (num * pricebid).toFixed(3) + "Nas";
 		$("#amount").text(amount);
 	}).change();
-}); 
+});
 
 //banner轮播
 var t;
@@ -118,7 +129,7 @@ $(function() {
     function scrollList() {
         //获得当前<li>的高度
         var scrollHeight = $("ul li:first").height()*6.5;
-        console.log(scrollHeight);
+//        console.log(scrollHeight);
         //滚动出一个<li>的高度
         $uList.stop().animate({
             marginTop: -scrollHeight
@@ -203,6 +214,9 @@ $(function(){
                             type: "POST",
                             data: {password:$("#password").val()},
                             dataType: "json",
+//											      xhrFields: {
+//												       withCredentials: true
+//											      },
                             success: function(data){
                                      console.log(body);
                                      console.log(data.code,data.msg);       
@@ -214,6 +228,7 @@ $(function(){
 
 //登录逻辑
   $(function(){
+		
     $(".loginfind").click(function(){
       var a = $("#filed").val(); 
       var b = $("#password").val();
@@ -231,12 +246,19 @@ $(function(){
       if(c == 1){
         var body = {filed:a,password:b};
         $.ajax({
+//					crossDomain: true,
           type: "POST",
-          url: "http://192.168.1.212:3010/login",
-          data: body, 
+          url: "http://192.168.1.131:3010/login",
+          data: body,
+					
+//					xhrFields: {
+//						withCredentials: true
+//					},
           success: function(data){
             console.log(body);
-            console.log(data.code,data.msg);       
+            console.log(data.code,data.msg);
+            alert(data.msg);
+            location.href = '../main/user.html'
           }
         })
       }  
@@ -247,19 +269,26 @@ $(function(){
   //注册逻辑
   $(document).ready(function(){
    $(".register").click(function(){
+		 
      var body ={
        userName: $("#telephone").val(), 
        password: $("#password").val(),
-       address: $("#address").val()
+       address: $("#verification").val()
            // verification: $("#verification").val()
            // invitation: $("#invitation").val()
          }
+//		 const nameReg = /^[^0-9].{5,11}$/
+//		 nameReg.test(body.userName);
+//		 if(!nameReg.test(body.userName)){//不允许注册
+//
+//		 }
          console.log(body)
-         $.post('http://192.168.1.212:3010/register',body)
+         $.post('http://192.168.1.131:3010/register',body)
+//		     $.ajaxSetup({ xhrFields: {withCredentials: true}})
          .done((data)=>{
           console.log(data)
           if(data.code==0){
-            window.location.href = '../user.html'
+            window.location.href = '../sign/5.html'
             // alert(data.msg)
           }
           else
@@ -270,6 +299,24 @@ $(function(){
         })
        });
  });
+//注销
+$(function(){
+	$("#setout").click(function(){
+//		var body = {filed:a,password:b};
+		$.ajax({
+			type: "GET",
+			url: "http://192.168.1.131:3010/loginout",
+//			data: body,
+			success: function(data){
+				console.log(data.code,data.msg);
+				if(data.msg == 'suc'){
+					location.href = '../sign/5.html'
+				}
+			}
+		})
+	});
+});
+
 
 //Tab切换
 $(function(){
@@ -295,6 +342,16 @@ $(function(){
 
 
 
-
 //临时保存商品点击事件
+
+//点击展示更多
+$(document).ready(function(){
+	$("#showmore").click(function(){        //当“展开全文”按钮点击的时候
+		$("#hideContent3").show();             //展示未完全显示的那部分内容
+	});
+});
+
+function noticing(){
+	alert("暂未开放，敬请期待")
+}
 

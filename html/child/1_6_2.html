@@ -1,48 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
-  <title>我的参与记录</title>
-  <link rel="stylesheet" type="text/css" href="../../css/reset.css">
-  <link rel="stylesheet" type="text/css" href="../../css/child.css">
-  <script src="../../js/style.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>我的参与记录</title>
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/child.css">
+    <script src="../../js/style.js"></script>
 </head>
 <body>
-  <div style="width: 100%;height: 1.222rem;font-size: 0.3rem;color: gray;">
+<div id="hideContent1" style="width: 100%;height: 1.222rem;font-size: 0.3rem;color: gray;">
     <div style="height: 1.222rem;width: 2.8rem;float: left;margin-left: 0.2rem;">
-      <div style="height: 0.611rem;line-height: 0.611rem;">号码：<span id="thisuser">10000</span></div>
+        <div style="height: 0.611rem;line-height: 0.611rem;">账户：<span id="thisuser0i">89****99</span></div>
+        <!-- <span style="line-height: 0.611rem;">中奖号码：<span>100000</span></span> -->
     </div>
-    <div style="height: 1.222rem;width: 3rem;float: left;">
-      <span style="line-height: 0.611rem;">购买数量：<span id="lucky">1</span>份</span>
+    <div style="height: 1.222rem;width: 2rem;float: left;">
+        <!-- <span style="line-height: 0.611rem;">中奖号码：<span id="lucky">100000</span></span> -->
     </div>
-    <div style="height: 1.222rem;width: 4rem;float: left;">
-      <div style="height: 0.611rem;line-height: 0.611rem;">时间：<span><span id="joinnumber">2018-5-10 12：26</span></span></div>   
+    <div style="height: 1.222rem;width: 5rem;float: left;">
+        <div id="thisNumber0" style="height: 0.611rem;line-height: 0.611rem;">参与号码：<span><span id="joinnumber01i"></span><span id="line0i">-</span><span id="joinnumber02i"></span></span></div>
+        <span style="line-height: 0.611rem;">时间：<span id="time0i"></span></span>
     </div>
-  </div>
-  <hr class="hrbiu" style="width: 9.6rem;">
-  
-    <div style="width: 100%;height: 1.222rem;font-size: 0.3rem;color: gray;">
+</div>
+<hr class="hrbiu" style="width: 9.6rem;">
+<div id="hideContent2" style="width: 100%;height: 1.222rem;font-size: 0.3rem;color: gray;">
     <div style="height: 1.222rem;width: 2.8rem;float: left;margin-left: 0.2rem;">
-      <div style="height: 0.611rem;line-height: 0.611rem;">号码：<span id="thisuser">10000</span></div>
+        <div style="height: 0.611rem;line-height: 0.611rem;">账户：<span id="thisuser1i"></span></div>
+        <!-- <span style="line-height: 0.611rem;">中奖号码：<span>100000</span></span> -->
     </div>
-    <div style="height: 1.222rem;width: 3rem;float: left;">
-      <span style="line-height: 0.611rem;">购买数量：<span id="lucky">1</span>份</span>
+    <div style="height: 1.222rem;width: 2rem;float: left;">
+        <!-- <span style="line-height: 0.611rem;">中奖号码：<span>100000</span></span> -->
     </div>
-    <div style="height: 1.222rem;width: 4rem;float: left;">
-      <div style="height: 0.611rem;line-height: 0.611rem;">时间：<span><span id="joinnumber">2018-5-10 12：26</span></span></div>   
+    <div style="height: 1.222rem;width: 5rem;float: left;">
+        <div id="joinnumber1" style="height: 0.611rem;line-height: 0.611rem;">参与号码：<span><span id="joinnumber11i"></span><span id="line1i">-</span><span id="joinnumber12i"></span></span></div>
+        <span style="line-height: 0.611rem;">时间：<span id="time1i"></span></span>
     </div>
-  </div>
-  <hr class="hrbiu" style="width: 9.6rem;">
+</div>
+<hr class="hrbiu" style="width: 9.6rem;">
 
-  
+<div id="hideContent3" style="display: none; width: 100%;height: 1.222rem;font-size: 0.3rem;color: gray;">
+    <div style="height: 1.222rem;width: 2.8rem;float: left;margin-left: 0.2rem;">
+        <div style="height: 0.611rem;line-height: 0.611rem;">账户：<span id="thisuser2i"></span></div>
+        <!-- <span style="line-height: 0.611rem;">中奖号码：<span>100000</span></span> -->
+    </div>
+    <div style="height: 1.222rem;width: 2rem;float: left;">
+        <!-- <span style="line-height: 0.611rem;">中奖号码：<span id="lucky">100000</span></span> -->
+    </div>
+    <div style="height: 1.222rem;width: 5rem;float: left;">
+        <div style="height: 0.611rem;line-height: 0.611rem;">参与号码：<span><span id="joinnumber21i"></span><span id="line2i">-</span><span id="joinnumber22i"></span></span></div>
+        <span style="line-height: 0.611rem;">时间：<span id="time2i"></span></span>
+    </div>
+</div>
+<hr class="hrbiu" style="display: none; width: 9.6rem;">
 
+<div id="showmore" style="text-align: center;color: gray;margin-top: 1.2rem;">查看更多</div>
+<div style="text-align: center;margin-top: 0.2rem;"><img src="../../image/1_6_15.png" style="width: 0.8rem;height: 0.375rem;"></div>
 
-  <div style="text-align: center;color: gray;margin-top: 1.2rem;">查看更多</div>
-  <div style="text-align: center;margin-top: 0.2rem;"><img src="../../image/1_6_14.png" style="width: 0.4rem;height: 0.375rem;"></div>
-
-  <script src="../../js/jquery.min.js"></script>
-  <script src="../../js/logic.js"></script>
-  <script src="../../js/dataget.js"></script>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/logic.js"></script>
+<script src="../../js/dataget.js"></script>
 </body>
 </html>

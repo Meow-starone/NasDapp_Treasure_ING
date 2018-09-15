@@ -46,16 +46,18 @@ vertical-align: middle;
 	margin-left: 0.46667rem;
 }
 .over_2{
-	background-color: #F0F8FF;
-	border-radius: 0.3rem;
+	background-image: url("../image/liner.png");
+	background-size: 4.51rem 1.25rem;
+	border-radius: 0.1rem;
 /*	width: 4.03889rem;
 	height: 1.05rem;
 	margin-left: 0.5rem;
 	margin-top: 0.1rem;*/
 }
 .willopen_2{
-	background-color: #F0F8FF;
-	border-radius: 0.3rem;
+	background-image: url("../image/liner.png");
+	background-size: 4.51rem 1.25rem;
+	border-radius: 0.1rem;
 /*	width: 4.03889rem;
 	height: 1.05rem;
 	margin-left: 0.88rem;
@@ -96,17 +98,13 @@ vertical-align: middle;
 
 
 /*iframe*/
-/*.ifclass{
-	overflow: hidden;
-    width: 10rem;
-    height: 100%;
-}*/
 .miao{
 	width: 10rem;
-	height: 100%;
-	/*overflow: hidden;*/
-    /*overflow-x: auto;	*/
+	height: 18.916667rem;
 }
+
+
+
 
 
 

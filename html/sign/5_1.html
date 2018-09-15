@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="header">
-    <a href="5.html"><img src="../../image/arrowleft.jpg"></a>
+    <a href="../../index.html"><img src="../../image/arrowleft.jpg"></a>
     <span>登陆中心</span>
   </div>
 
@@ -19,7 +19,7 @@
     <div class="msg" id="message"></div>
     <div>
       <label for="telephone"></label>
-      <input id="telephone" placeholder="请输入6-12位帐户名" name="telephone" type="txt" class="u-txt" required pattern="^[a-zA-Z0-9_-||\u4e00-\u9fa5]{6,12}$"
+      <input id="telephone" placeholder="请输入6-12位帐户名|不可纯数字" name="telephone" type="txt" class="u-txt" required pattern="/^[^0-9].{5,11}$/"
       ><br/>
     </div>
     <hr class="hrbiu">
@@ -27,7 +27,7 @@
     <div>
       <label for="address"></label>
       <input style="width: 72%;float: left;" id="verification" placeholder="请输入Nas钱包地址" name="address" type="txt" class="u-txt"><br/>
-      <div class="ver"></div> 
+      <!--<div class="ver"></div> -->
       <hr class="hrbiu">
     </div>
     <div>
@@ -37,11 +37,12 @@
     </div>
     <div>
       <label for="invitation"></label>
-      <input id="invitation" placeholder="请输入邀请码" name="invitation" type="txt" class="u-txt"><br/>
+      <input id="invitation" placeholder="请输入邀请码(可选)" name="invitation" type="txt" class="u-txt"><br/>
       <hr class="hrbiu">
     </div>
-    <div class="losspassword">绑定邮箱赠送100BIPA</div>
+    <!--<div class="losspassword">绑定邮箱赠送100BIPA</div>-->
     <div><button class="register" name="loginBtn">注 册</button></div>
+    <a href="5.html"><div class="signup">返回登录>></div></a>
   </div>
 
 <script src="../../js/jquery.min.js"></script>

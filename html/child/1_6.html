@@ -15,24 +15,24 @@
       <span>第<span id = "bidid">123456</span>期</span>
   </div>
   <hr class="hrbase">
-  <div class="firstimg"><img src="../../image/1_6_05.jpg"></div>
+  <div class="firstimg"><img id="firstimg" src="../../image/t1.png"></div>
   <div class="firsttxt">
-    <div class="txt1">价格：<span id = "pervalue">1</span>LOTE/份</div>
+    <div class="txt1">价格：<span id = "pervalue">1</span>Nas/份</div>
     <div class="txt2">
         <img src="../../image/1_6_08.jpg">
-        <div class="txt2txt">奖励：<span id = "reward">100</span>LOTE</div>
+        <div class="txt2txt">奖励：<span id = "reward">100</span>Nas</div>
     </div>
 </div>
 <div class="lanner">
     <div class="lannerl">
         <img src="../../image/1_6load.png">
-        <div class="has"><span id = "remainct">2500</span></div>
+        <div class="has"><span id = "totalCt-count">2500</span></div>
         <div class="all" id="allct">5000</div>
     </div>
     <div class="lannerr">
         <div class="extra">
-            <p>总需<span id="allct1">500</span>/份</p>
-            <p>已参与<span>0</span>/份</p>
+            <p>总量<span id="allct1">500</span>/份</p>
+            <p>已参与<span id ="count">0</span>/份</p>
             <p>剩余<span id="remainct1">2500</span>/份</p>
         </div>
     </div>
@@ -43,18 +43,18 @@
     <div class="dests">开奖后区未来第10个区块的nonce，中奖号码=(nonce后8位
         的10进制整数，除以参与总数得到的余数) + 1 + 100000
     </div>
-    <hr class="hrbase" style="margin-top: 0.3rem;">
+    <!--<hr class="hrbase" style="margin-top: 0.3rem;">-->
 
+<!--下个版本加上-->
+    <!--<div class="nowtxt">-->
+        <!--<img src="../../image/1_6_11.jpg">-->
+        <!--<div class="txts">每份投注可获得<span id="eachfund">1</span>个BIPA奖励</div>-->
+    <!--</div>-->
 
-    <div class="nowtxt">
-        <img src="../../image/1_6_11.jpg">
-        <div class="txts">每份投注可获得<span id="eachfund">1</span>个BIPA奖励</div>
-    </div>
-
-    <div style="margin-left: 0.2rem;" class="nowtxt">
-        <img src="../../image/1_6_11.jpg">
-        <div class="txts">首次投注可获得<span id="firstfund">100个BIPA奖励</span></div>
-    </div>
+    <!--<div style="margin-left: 0.2rem;" class="nowtxt">-->
+        <!--<img src="../../image/1_6_11.jpg">-->
+        <!--<div class="txts">首次投注可获得<span id="firstfund">100个BIPA奖励</span></div>-->
+    <!--</div>-->
 </div>
 <hr class="hrbase" style="width: 10rem;">
 
@@ -71,9 +71,9 @@
 <hr class="hrbase" style="width: 10rem;">
 
 <div class="buyconfirm">
-    <div style="margin-top: 0.8rem;" class="confirm">
-        <div>金额：<span id="amount">100eos</span></div>
-        <div>余额：<span>0.00012eos</span></div>
+    <div style="margin-top: 1rem;" class="confirm">
+        <div>金额：<span id="amount">1Nas</span></div>
+        <!--<div>余额：<span>0.00012Nas</span></div>-->
     </div>
     <div class="confirm">
         <div class="confirmimg" onclick="clickedbuy();">立即购买</div>
@@ -93,6 +93,10 @@
 <script type="text/javascript" src="../../js/jquery.min.js"></script>
 <script src="../../js/logic.js"></script>
 <script src="../../js/dataget.js"></script>
+ <!--<script src="../../js/nebulas.js"></script>-->
 
 </body>
 </html>
+<script>
+
+</script>
